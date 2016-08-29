@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aliisa & Josh</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="libs/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="libs/bootstrap/js/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    
+    <style>
+        body {
+            font-family: 'Champagne&Limousines';
+            font-size: 14pt;
+        }
+        
+        .navbar {
+            background-color: white;
+        }
+        
+        .navbar.navbar-fixed-top {
+            background-color: rgb(245, 251, 254);
+        }
+        
+        .nav li > a {
+            color: rgb(43, 108, 91); /* dark teal */
+            text-align: center;
+        }
+        
+        .nav li.active > a::before {
+            content: 'n';
+            color: rgb(144, 170, 161); /* light teal */
+            font-family: 'PillowbookOrnaments';
+            font-size: 10pt;
+            margin-right: 5px;
+        }
+        
+        .nav li.active > a::after {
+            margin-right: 0px;
+            margin-left: 5px;
+        }
+        
+        .nav li > a:hover,
+        .nav li > a:focus {
+            color: orange; /* orange */;
+/*
+            text-decoration: underline;
+            text-decoration-color: rgb(253, 98, 35);  orange 
+*/
+            background-color: transparent;
+        }
+        
+        .nav li.active > a:hover,
+        .nav li.active > a:focus {
+            text-decoration: none;
+            background-color: transparent;
+        }
+        
+        .nav li > a:hover::before,
+        .nav li > a:focus::before {
+            color: orange;
+            content: 'v';
+            color: rgb(144, 170, 161); /* light teal */
+            font-family: 'PillowbookOrnaments';
+            font-size: 10pt;
+            margin-right: 5px;
+        }
+        
+        .nav .dropdown-menu .active a,
+        .nav .dropdown-menu .active a:hover,
+        .nav .dropdown-menu .active a:focus {
+            background-color: white;
+            color: rgb(43, 108, 91); /* dark teal */
+        }
+        
+        .navbar .navbar-toggle {
+            border-color: rgb(144, 170, 161); /* light teal */
+        }
+        
+        .navbar .navbar-toggle .icon-bar {
+            background-color: rgb(43, 108, 91); /* dark teal */
+        }
+        
+        .separator-flourish {
+            font-family: 'PillowbookOrnaments';
+            font-size: 80pt;
+            color: rgb(253, 98, 35); /* orange */
+            color: rgb(144, 170, 161); /* light teal */
+            text-align: center;
+        }
+        
+        h2 {
+            font-family: 'Pillowbook';
+/*            text-align: center;*/
+            color: rgb(43, 108, 91); /* dark teal */
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        h3 {
+            margin-top: 10px;
+        }
+        
+        #registry img {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        
+        .gallery-row {
+            margin-left: 20%;
+        }
+        
+        .gallery-row img {
+            padding: 6px;
+        }
+        
+        .gallery-row img:hover {
+            padding: 4px;
+            border: 2px solid orange;
+        }
+        
+        @media (max-width: 767px) {
+            .navbar {
+                position: fixed;
+                top: 0;
+                background-color: rgb(179, 224, 245);
+                border-width: 0 0 1px;
+                z-index: 20;
+            }
+            .gallery-row {
+                margin-left: 8.333333%;
+            }
+        }
+        
+        .wedding-section {
+            padding-top: 100px;
+        }
+        
+        /*blue: color: rgb(34, 131, 188);*/
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+    <div style="height: 400px; padding-top: 120px; background-image: url(images/proposal-slice.png); background-size: cover; background-position: center top;">
+<!--
+        <div class="row">
+            <img src="images/Mint&Gold_03.png" class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4" />
+        </div>
+-->
+        <div id="top-names" style="text-align: center; font-family: 'Pillowbook'; font-size: 46pt; line-height: 50px;">
+            <p id="top-names-aliisa">Aliisa Lee</p>
+            <p id="top-names-and" style="font-family: 'PillowbookOrnaments';">c</p>
+            <p id="top-names-Josh">Joshua Bocarsly</p>
+        </div>
+    </div>
+    <div id="navbar" class="navbar col-xs-12" data-spy="affix" data-offset-top="400">
+        <div class="container-fluid">
+            <div class="navbar-header visible-xs">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand"></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav col-xs-12">
+                    <li class="col-xs-12 col-sm-3 col-md-2 col-md-offset-2"><a href="#our-story">Our story</a></li>
+                    <li class="dropdown col-xs-12 col-sm-3 col-md-2">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Wedding <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#wedding">Info</a></li>
+                            <li><a href="#wedding-party">Wedding party</a></li>
+                            <li><a href="#wedding-rsvp">RSVP</a></li>
+                        </ul>
+                    </li>
+                    <li class="col-xs-12 col-sm-3 col-md-2"><a href="#registry">Registry</a></li>
+                    <li class="col-xs-12 col-sm-3 col-md-2"><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="our-story" class="container-fluid wedding-section">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+                <h2>Our Story</h2>
+                <p>Josh and Aliisa met at Princeton... and more story.</p>
+                <p>Josh proposed at Lake Carnegie on May 29, 2016.</p>
+            </div>
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                <img src="images/proposal-sketch.png" style="width: 100%;" />
+            </div>
+            <div class="col-xs-12 separator-flourish">E</div>
+        </div>
+    </div>
+    <div id="wedding" class="container-fluid wedding-section">
+        <div class="row">
+            <div id="wedding-info" class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+                <h2>Wedding</h2>
+                <p><b>When?</b> June 25, 2017</p>
+                <p><b>Where?</b> Moorestown Community House, Moorestown, NJ</p>
+                <div id="countdown">
+                    <h2 style="text-align: center; color: orange;"><span id="countdown-days">100</span> days to go!</h2>
+                </div>
+            </div>
+            <div id="wedding-party" class="wedding-section col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+                <h2>Wedding Party</h2>
+                <div id="bridesmaids" class="col-xs-12 col-sm-6" style="text-align: center;">
+                    <h3>Bridesmaids</h3>
+                    <p>Amalia - est. 1997</p>
+                    <p>Annika - est. 1994</p>
+                    <p>Avelina - est. 2000</p>
+                    <p>Josh's sis - est. 1993</p>
+                    <p>Josh's sis - est. 1993</p>
+                    <p>Alissa - est. 2012</p>
+                    <p>Emily - est. 2011</p>
+                </div>
+                <div id="groomsmen" class="col-xs-12 col-sm-6" style="text-align: center;">
+                    <h3>Groomsmen</h3>
+                    <p>Josh's friend - est. 2011</p>
+                    <p>Josh's friend - est. 2009</p>
+                    <p>Josh's friend - est. 2007</p>
+                    <p>Josh's brolaw - est. 2010</p>
+                    <p>Josh's brolaw - est. 2011</p>
+                    <p>Aleksi - est. 1994</p>
+                    <p>Anders - est. 1994</p>
+                </div>
+            </div>
+            <div id="wedding-rsvp" class="wedding-section col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+                <h2>RSVP</h2>
+                <form class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4" style="border: 1px grey solid; border-radius: 5px; padding: 15px;">
+                     Name <input type="text" name="name">
+                     <br>
+                     <input type="radio" name="yes" value="yes"> Yes! Can't wait to celebrate!
+                     <br>
+                     <input type="radio" name="no" value="no"> No, we'll be celebrating from afar.
+                     <br>
+                     <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="col-xs-12 separator-flourish">g</div>
+        </div>
+    </div>
+    <div id="registry" class="container-fluid wedding-section">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+                <h2>Registry</h2>
+                <p>Help us put together our first home!</p>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                <div class="row">
+                    <img class="col-xs-12 col-sm-6" src="images/registry/logo-bbb.png" />
+                    <img class="col-xs-12 col-sm-6" src="images/registry/logo-target.png" />
+                    <img class="col-xs-12 col-sm-6" src="images/registry/logo-amazon.png" />
+                    <img class="col-xs-12 col-sm-6" src="images/registry/logo-ikea.png" />
+                </div>
+            </div>
+            <div class="col-xs-12 separator-flourish">f</div>
+        </div>
+    </div>
+    <div id="gallery" class="container-fluid wedding-section">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+                <h2>Gallery</h2>
+            </div>
+            <div class="gallery-row col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+                <img class="col-xs-12 col-sm-4" src="images/aliisa-graduation.jpg" />
+                <img class="col-xs-12 col-sm-7" src="images/big-people.png" />
+                <img class="col-xs-12 col-sm-7" src="images/big-hand.jpg" />
+                <img class="col-xs-12 col-sm-4" src="images/engaged.jpg" />
+            </div>
+            <div class="col-xs-12 separator-flourish">k</div>
+        </div>
+    </div>
+    <div id="gallery2" class="container-fluid wedding-section">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+                <h2>Gallery</h2>
+            </div>
+            <div id="gallery-carousel" class="carousel slide col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#gallery-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#gallery-carousel" data-slide-to="1"></li>
+                    <li data-target="#gallery-carousel" data-slide-to="2"></li>
+                    <li data-target="#gallery-carousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/aliisa-graduation.jpg" alt="Aliisa's graduation!" />
+                        <div class="carousel-caption">Aliisa's graduation!</div>
+                    </div>
+                    <div class="item">
+                        <img src="images/big-people.png" alt="Aliisa and Josh and some giant friends" />
+                        <div class="carousel-caption">Aliisa and Josh and some giant friends</div>
+                    </div>
+                    <div class="item">
+                        <img src="images/big-hand.jpg" alt="Aliisa and Josh sitting in a giant hand" />
+                        <div class="carousel-caption">Aliisa and Josh sitting in a giant hand</div>
+                    </div>
+                    <div class="item">
+                        <img src="images/engaged.jpg" alt="Engaged!" />
+                        <div class="carousel-caption">Engaged!</div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#gallery-carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#gallery-carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="col-xs-12 separator-flourish">k</div>
+        </div>
+    </div>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-60221539-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+    <script>
+        $('#navbar').on('affix.bs.affix', function () {
+            $(this).addClass('navbar-fixed-top');
+            $(this).removeClass('col-sm-12');
+        }).on('affix-top.bs.affix', function () {
+            $(this).removeClass('navbar-fixed-top');
+            $(this).addClass('col-sm-12');
+        });
+        
+        $('#gallery .gallery-row img').click(function () {
+            $(this).toggleClass('col-sm-12').toggleClass('col-sm-4');
+        });
+        
+        var today = new Date();
+        var july25 = new Date(2017, 5, 25);
+        var daysLeft = Math.ceil((july25 - today) / (1000 * 60 * 60 * 24));
+        $('#countdown #countdown-days').text(daysLeft);
+    </script>
+</body>
+
+</html>

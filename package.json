@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ecslee/joshliisa#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
-    "grunt-aws": "^0.6.2"
+    "grunt-aws": "^0.6.2",
+    "grunt-sass": "^1.2.1"
   }
 }

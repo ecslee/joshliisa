@@ -1,6 +1,7 @@
 # joshliisa
 
 Wedding website for Aliisa and Josh!
+[joshliisa.emilyanders.us](http://joshliisa.emilyanders.us) (temporary home)
 
 ### JS
 Uses the Bootstrap framework

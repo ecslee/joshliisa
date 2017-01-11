@@ -8,8 +8,9 @@ module.exports = function (grunt) {
             options: {
                 accessKeyId: "<%= s3.aws.accessKeyId %>",
                 secretAccessKey: "<%= s3.aws.secretAccessKey %>",
-                bucket: "joshliisa.emilyanders.us",
-                region: "us-west-2" // Oregon
+                //bucket: "joshliisa.emilyanders.us",
+                bucket: "www.joshandaliisa.com",
+                region: "us-east-1" // Oregon
             },
             css: {
                 src: "css/**"
@@ -18,7 +19,7 @@ module.exports = function (grunt) {
                 src: "images/**"
             },
             index: {
-                src: ["index.html", "index.js"]
+                src: ["index.html", "index.js", "work-in-progress.html"]
             },
             libs: {
                 src: "libs/**"
@@ -43,4 +44,5 @@ module.exports = function (grunt) {
     grunt.registerTask("default", ["sass"]);
     grunt.registerTask("index", ["s3:index"]);
     grunt.registerTask("deploy", ["sass", "s3"]);
+    grunt.registerTask("savethedate", ["savethedate"]);
 }

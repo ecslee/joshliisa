@@ -1,4 +1,17 @@
 /* fonts */
+/* BoosterNextFY */
+@font-face { font-family: 'BoosterNextFY'; src: url("fonts/booster-next/Black/BoosterNextFY-Black.eot"); src: url("fonts/booster-next/Black/BoosterNextFY-Black.eot?#iefix") format("embedded-opentype"), url("fonts/booster-next/Black/BoosterNextFY-Black.woff") format("woff"), url("fonts/booster-next/Black/BoosterNextFY-Black.ttf") format("truetype"), url("fonts/booster-next/Black/BoosterNextFY-Black.svg#Booster Next FY Black") format("svg"); font-weight: 900; font-style: normal; }
+
+@font-face { font-family: 'BoosterNextFY'; src: url("fonts/booster-next/Bold/BoosterNextFY-Bold.eot"); src: url("fonts/booster-next/Bold/BoosterNextFY-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/booster-next/Bold/BoosterNextFY-Bold.woff") format("woff"), url("fonts/booster-next/Bold/BoosterNextFY-Bold.ttf") format("truetype"), url("fonts/booster-next/Bold/BoosterNextFY-Bold.svg#Booster Next FY Bold") format("svg"); font-weight: bold; font-style: normal; }
+
+@font-face { font-family: 'BoosterNextFY'; src: url("fonts/booster-next/Medium/BoosterNextFY-Medium.eot"); src: url("fonts/booster-next/Medium/BoosterNextFY-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/booster-next/Medium/BoosterNextFY-Medium.woff") format("woff"), url("fonts/booster-next/Medium/BoosterNextFY-Medium.ttf") format("truetype"), url("fonts/booster-next/Medium/BoosterNextFY-Medium.svg#Booster Next FY Medium") format("svg"); font-weight: 600; font-style: normal; }
+
+@font-face { font-family: 'BoosterNextFY'; src: url("fonts/booster-next/Regular/BoosterNextFY-Regular.eot"); src: url("fonts/booster-next/Regular/BoosterNextFY-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/booster-next/Regular/BoosterNextFY-Regular.woff") format("woff"), url("fonts/booster-next/Regular/BoosterNextFY-Regular.ttf") format("truetype"), url("fonts/booster-next/Regular/BoosterNextFY-Regular.svg#Booster Next FY Regular") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'BoosterNextFY'; src: url("fonts/booster-next/Light/BoosterNextFY-Light.eot"); src: url("fonts/booster-next/Light/BoosterNextFY-Light.eot?#iefix") format("embedded-opentype"), url("fonts/booster-next/Light/BoosterNextFY-Light.woff") format("woff"), url("fonts/booster-next/Light/BoosterNextFY-Light.ttf") format("truetype"), url("fonts/booster-next/Light/BoosterNextFY-Light.svg#Booster Next FY Light") format("svg"); font-weight: 300; font-style: normal; }
+
+@font-face { font-family: 'BoosterNextFY'; src: url("fonts/booster-next/Thin/BoosterNextFY-Thin.eot"); src: url("fonts/booster-next/Thin/BoosterNextFY-Thin.eot?#iefix") format("embedded-opentype"), url("fonts/booster-next/Thin/BoosterNextFY-Thin.woff") format("woff"), url("fonts/booster-next/Thin/BoosterNextFY-Thin.ttf") format("truetype"), url("fonts/booster-next/Thin/BoosterNextFY-Thin.svg#Booster Next FY Thin") format("svg"); font-weight: 100; font-style: normal; }
+
 /* Champagne and Limousines */
 @font-face { font-family: 'Champagne&Limousines'; src: url("fonts/champagne-limousines/champagnelimousines-webfont.eot"); src: url("fonts/champagne-limousines/champagnelimousines-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/champagne-limousines/champagnelimousines-webfont.woff") format("woff"), url("fonts/champagne-limousines/champagnelimousines-webfont.ttf") format("truetype"), url("fonts/champagne-limousines/champagnelimousines-webfont.svg#champagne__limousinesregular") format("svg"); font-weight: normal; font-style: normal; }
 
@@ -8,9 +21,15 @@
 
 @font-face { font-family: 'Champagne&LimousinesBoldItalic'; src: url("fonts/champagne-limousines/champagnelimousinesbolditalic-webfont.eot"); src: url("fonts/fonts/champagne-limousines/champagnelimousinesbolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/champagne-limousines/champagnelimousinesbolditalic-webfont.woff") format("woff"), url("fonts/fonts/champagne-limousines/champagnelimousinesbolditalic-webfont.ttf") format("truetype"), url("fonts/champagne-limousines/champagnelimousinesbolditalic-webfont.svg#champagne__limousinesBdIt") format("svg"); font-weight: normal; font-style: normal; }
 
+/* Janda Elegant Handwriting */
+@font-face { font-family: 'JandaElegantHandwriting'; src: url("fonts/janda-elegant/jandaeleganthandwriting-webfont.woff") format("woff"), url("fonts/janda-elegant/JandaElegantHandwriting.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
 /* Pillowbook */
 @font-face { font-family: 'Pillowbook'; src: url("fonts/pillowbook/pillowbook-regular/pillowbook-regular-webfont.eot"); src: url("fonts/pillowbook/pillowbook-regular/pillowbook-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/pillowbook/pillowbook-regular/pillowbook-regular-webfont.woff") format("woff"), url("fonts/pillowbook/pillowbook-regular/pillowbook-regular-webfont.ttf") format("truetype"), url("fonts/pillowbook/pillowbook-regular/pillowbook-regular-webfont.svg#pillowbookregular") format("svg"); font-weight: normal; font-style: normal; }
 
 @font-face { font-family: 'PillowbookOrnaments'; src: url("fonts/pillowbook/pillowbook-ornaments/pillowbook-ornaments-webfont.eot"); src: url("fonts/pillowbook/pillowbook-ornaments/pillowbook-ornaments-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/pillowbook/pillowbook-ornaments/pillowbook-ornaments-webfont.woff") format("woff"), url("fonts/pillowbook/pillowbook-ornaments/pillowbook-ornaments-webfont.ttf") format("truetype"), url("fonts/pillowbook/pillowbook-ornaments/pillowbook-ornaments-webfont.svg#pillowbook_ornaments") format("svg"); font-weight: normal; font-style: normal; }
+
+/* SUNN */
+@font-face { font-family: 'SUNN'; src: url("fonts/sunn/sunn-webfont.woff") format("woff"), url("fonts/sunn/SUNN.otf") format("opentype"); font-weight: normal; font-style: normal; }
 
 /*# sourceMappingURL=fonts.css.map */

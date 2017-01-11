@@ -21,12 +21,12 @@
         }
         
         h2 {
-            font-family: 'JandaElegantHandwriting';
+            font-family: 'SUNN';
 /*            text-align: center;*/
             color: rgb(43, 108, 91); /* dark teal */
             margin-top: 20px;
-            margin-bottom: 20px;
-            font-size: 24px;
+            margin-bottom: 10px;
+            font-size: 36px;
             text-align: center;
         }
         
@@ -50,14 +50,13 @@
         }
         
         .firstletter {
-            font-family: "JandaElegantHandwriting";
+            font-family: "BoosterNextFY";
             float: left;
             color: rgb(43, 108, 91);
-            font-size: 64px;
+            font-size: 70px;
             line-height: 43px;
-            padding-top: 22px;
-            padding-right: 10px;
-            /* padding-left: 3px; */
+            padding-top: 10px;
+            padding-right: 6px;
             font-weight: 300;
         }
         
@@ -114,12 +113,12 @@
         }
         
         #tidbits .tidbit-q::before {
-            content: 'Q';
+            content: 'Q.';
             font-size: 14pt;
-            font-family: 'JandaElegantHandwriting';
+            font-family: 'BoosterNextFY';
             color: rgb(43, 108, 91); /* dark teal */
             margin-left: -30px;
-            margin-right: 12px;
+            margin-right: 8px;
         }
         
         .navbar-toggle {
@@ -156,9 +155,10 @@
         }
         
         p.party-name {
-            font-size: 10pt;
+            font-size: 18pt;
             font-weight: 600;
-            margin: 10px 0px 0px;
+            margin: 0px;
+            font-family: 'SUNN';
         }
         
         p.party-name .party-last-name {
@@ -172,6 +172,7 @@
         
         p.party-story {
             font-weight: 100;
+            height: 90px;
         }
         
         @media (max-width: 767px) {
@@ -196,7 +197,7 @@
         
         #welcome {
             height: 100vh;
-            overflow: hidden;
+/*            overflow: hidden;*/
             color: white;
             padding: 0px;
             background-image: url(images/AJ-engagement-141.jpg);*/
@@ -220,7 +221,7 @@
     </style>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#wedding-menu">
     <div class="container-fluid">
         <div class="row">
             <div id="wedding-menu" class="dropdown" style="position: fixed; top: 20px; left: 20px; z-index: 100;">
@@ -236,13 +237,20 @@
                     <li class="dropdown"><a href="#countdown" class="active">Welcome</a></li>
                     <li class="dropdown"><a href="#story">Story</a></li>
                     <li class="dropdown"><a href="#venue">Wedding venue</a></li>
+                    <li class="dropdown"><a href="#party">Fantastic fourteen</a></li>
                     <li class="dropdown"><a href="#registry">Registry</a></li>
+                    <li class="dropdown"><a href="#tidbits">Tidbits</a></li>
                 </ul>
             </div>
             <div id="welcome" class="hidden-xs col-xs-12 col-sm-7">
-<!--                <div class="background col-xs-7" style="display: block; z-index: 1; background-image: url(images/backgrounds/AJ-engagement-141.jpg);"></div>-->
+<!--
+                <div style="padding-top: 450px; padding-left: 50px;">
+                    <h1 style="">Aliisa & Josh</h1>
+                    <h3>We can't wait to share our special day with you!</h3>
+                </div>
+-->
             </div>
-            <div id="info" data-spy="scroll" data-target="#wedding-menu" class="col-xs-12 col-sm-5" style="height: 100vh; overflow: auto;">
+            <div id="info" class="col-xs-12 col-sm-5" style="/*height: 100vh; overflow: auto;*/">
                 <div id="countdown" class="info-section no-separator col-xs-10 col-xs-offset-1" style="/*height: 100vh;*/ min-height: 500px; text-align: center; padding-top: 10px;">
                     <div class="img-wrapper col-xs-10 col-xs-offset-1">
                         <img style="padding: 20px 0px;" src="images/Josh-Aliisa-banner-flowers-top.jpg">
@@ -289,12 +297,107 @@
                     </div>
                     <p>The Community House is a beautiful brick and stone building, built in 1926 right on Moorestown’s Main Street. Today, it is a non-profit that serves the area for a wide range of community events, plus rents out for weddings! We’ll have the building to ourselves for the afternoon, so it will officially become our Lee-Bocarsly party house.</p>
                 </div>
+                <div id="party" class="info-section col-xs-10 col-xs-offset-1" style="text-align: center;">
+                    <h2 style="margin-top: 50px;">Fantastic Fourteen</h2>
+                    <div id="party-selected" style="margin-bottom: 40px;">
+                        <div class="img-wrapper col-xs-4 col-xs-offset-4">
+                            <img class="party-face" style="border-radius: 50%;">
+                        </div>
+                        <p class="party-name"></p>
+                        <p class="party-title"></p>
+                        <p class="party-story"></p>
+                    </div>
+                    <div class="party-rows">
+                        <div id="party-amalia" class="party-person col-xs-4" data-name="Amalia Lee" data-title="maid of honor - sister of the bride" data-story="Amalia is Aliisa's medium-sister. Everyday, she is good at singing, drawing cute tiny beavers, and doing science. Years ago, Aliisa and Amalia signed a contract that says they can never be mad at each other for more than five seconds.">
+                            <div class="img-wrapper">
+                                <img class="party-face" src="images/wedding-party/bridesmaids/amalia.jpeg">
+                            </div>
+                            <p class="party-name">AMALIA<span class="party-last-name"> LEE</span></p>
+                            <p class="party-title">MAID OF HONOR</p>
+                        </div>
+                        <div id="party-avelina" class="party-person col-xs-4" data-name="Avelina Lee" data-title="bridesmaid - sister of the bride" data-story="Avelina (or Avi) is Aliisa's littlest sister. She is a world-class baker, hair-expert, linguist, and baby boss. Avi's love for Aliisa -- expressed by giving her food and cuddles -- is only surpassed by Avi's love for her cat, Yupi.">
+                            <div class="img-wrapper">
+                                <img class="party-face" src="images/wedding-party/bridesmaids/avi.jpeg">
+                            </div>
+                            <p class="party-name">AVELINA<span class="party-last-name"> LEE</span></p>
+                            <p class="party-title">BRIDESMAID</p>
+                        </div>
+                        <div id="party-annika" class="party-person col-xs-4" data-name="Annika Lee" data-title="bridesmaid - sister of the bride" data-story="Annika is Aliisa's little big sister. She is amazing at drawing, speaking Japanese, and having information about everything. Annika is in charge of sending Aliisa art inspiration, interesting news, and pictures of other people's dogs.">
+                            <div class="img-wrapper">
+                                <img class="party-face" src="images/wedding-party/bridesmaids/annika.jpeg">
+                            </div>
+                            <p class="party-name">ANNIKA<span class="party-last-name"> LEE</span></p>
+                            <p class="party-title">BRIDESMAID</p>
+                        </div>
+                        <div id="party-emily" class="party-person col-xs-4" data-name="Emily Lee" data-title="bridesmaid - sister-in-law" data-story="Aliisa got another sister when Emily married Anders! Emily is a coder, photographer, and perfect blend of creativity and organization. Emily is also a fun lifeline of sanity and Pinterest ideas when Aliisa desperately texts her for life help.">
+                            <div class="img-wrapper">
+                                <img class="party-face" src="images/wedding-party/bridesmaids/emily.JPG">
+                            </div>
+                            <p class="party-name">EMILY<span class="party-last-name"> LEE</span></p>
+                            <p class="party-title">BRIDESMAID</p>
+                        </div>
+                        <div id="party-alissa" class="party-person col-xs-4" data-name="Alissa Hopper" data-title="bridesmaid - college friend" data-story="This is Alissa.  Aliisa and Alissa bonded as Princeton classmates with oddly similar names.">
+                            <div class="img-wrapper">
+                                <img class="party-face" src="images/wedding-party/bridesmaids/alissa.jpg">
+                            </div>
+                            <p class="party-name">ALISSA<span class="party-last-name"> HOPPER</span></p>
+                            <p class="party-title">BRIDESMAID</p>
+                        </div>
+                        <div id="party-miriam" class="party-person col-xs-4" data-name="Miriam Black" data-title="bridesmaid - sister of the groom" data-story="This is Miriam.  I haven't met her yet, but she seems friendly and has a cute kid.">
+                            <div class="img-wrapper">
+                                <img class="party-face" src="images/wedding-party/bridesmaids/miriam.jpg">
+                            </div>
+                            <p class="party-name">MIRIAM<span class="party-last-name"> BLACK</span></p>
+                            <p class="party-title">BRIDESMAID</p>
+                        </div>
+                        <div id="party-andrew" class="party-person col-xs-4" data-name="Andrew Black" data-title="groomsman - brother-in-law" data-story="This is Andrew.  He married Josh's sister Miriam.">
+                            <div class="img-wrapper">
+                                <img class="party-face" src="images/wedding-party/groomsmen/andrew.jpg">
+                            </div>
+                            <p class="party-name">ANDREW<span class="party-last-name"> BLACK</span></p>
+                            <p class="party-title">GROOMSMAN</p>
+                        </div>
+                        <div id="party-anders" class="party-person col-xs-4" data-name="Anders Lee" data-title="groomsman - brother of the bride" data-story="This is Anders.  He is Aliisa's coolest older brother.">
+                            <div class="img-wrapper">
+                                <img class="party-face" src="images/wedding-party/groomsmen/anders.JPG">
+                            </div>
+                            <p class="party-name">ANDERS<span class="party-last-name"> LEE</span></p>
+                            <p class="party-title">GROOMSMAN</p>
+                        </div>
+                        <div id="party-aleksi" class="party-person col-xs-4" data-name="Aleksi Lee" data-title="groomsman - brother of the bride" data-story="This is Aleksi.  He is Aliisa's oldest older brother.">
+                            <div class="img-wrapper">
+                                <img class="party-face" src="images/wedding-party/groomsmen/aleksi.JPG">
+                            </div>
+                            <p class="party-name">ALEKSI<span class="party-last-name"> LEE</span></p>
+                            <p class="party-title">GROOMSMAN</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
                 <div id="registry" class="info-section col-xs-10 col-xs-offset-1" style="text-align: center;">
                     <h2>Registry</h2>
                     <p>Thank you so much for helping us set up our first home together!  Registry links coming soon...</p>
                     <div class="img-wrapper col-xs-8 col-xs-offset-2">
                         <img src="images/Bird-house.jpg">
                     </div>
+                </div>
+                <div id="tidbits" class="info-section col-xs-10 col-xs-offset-1">
+                    <h2>Tidbits</h2>
+                    <p class="tidbit-q">What are your favorite activities to share together?</p>
+                    <p class="tidbit-a">When we are together, we’ve loved going out to sushi, visiting to museums and historic sites, biking around, rock climbing, just talking, and watching Gordon Ramsay videos!</p>
+                    
+                    <p class="tidbit-q">Where are you going for your honeymoon?</p>
+                    <p class="tidbit-a">Somewhere over the rainbow~</p>
+<!--                    <p class="tidbit-a">We’re headed to beautiful Kauai! After some time of just us, we’ll hop over to Oahu so Aliisa can show Josh the people and places of where she grew up. Plus, it’s still a Hawaiian island and you just can’t go wrong with that.</p>-->
+                    
+                    <p class="tidbit-q">What was your most memorable date?</p>
+                    <p class="tidbit-a">Aliisa: Once, Josh and I went on a very beautiful surrey ride along the Santa Barbara coast. I got out at one point to find drinks for us, and when I came back, Josh was pedaling furiously away with the surrey. I had to run after him with some kind old gentleman watching and cheering, "Go go go, you can catch him!" It was very memorable.</p>
+                    
+                    <p class="tidbit-q">What's the most memorable trip you have taken together?</p>
+                    <p class="tidbit-a">Aliisa: One of my favorite trips has been to beautiful Lolo, Montana for our friends Dan and Katherine's wedding! We went hiking and found all sorts of creeping and crawling wildlife together, including a giant snake eating a frog. Wow!</p>
+                    
+                    <p class="tidbit-q">What's the best meal you have eaten together?</p>
+                    <p class="tidbit-a">Aliisa: On one of my visits out to Santa Barbara, Josh made a dinner of steak with broiled grapefruit on the side. For dessert, we ate salted avocado right out of the skin, just scooping it out like ice cream! Especially after being apart from him a long time, eating that meal together in the middle of his little shared quad living room, I felt like the fanciest lady in the world.</p>
                 </div>
             </div>
         </div>
@@ -375,6 +478,7 @@
             '#tidbits': '147'
         };
         
+        // debounce? turn off in click handler? just on('scroll') instead of activate
         var firstScroll = false;
         $('#wedding-menu').on('activate.bs.scrollspy', function (evt) {
             if (!firstScroll) {
@@ -407,15 +511,15 @@
         
         $('#welcome .background[data-section="#countdown"]').addClass('view').css('display', 'block');
         
-//        $('#wedding-menu a').click(function (evt) {
-//            if (this.hash !== '') {
-//                evt.preventDefault();
-//                var hash = this.hash;
-//                $('body').animate({
-//                    scrollTop: $(hash).offset().top
-//                }, 500, function () { });
-//            }
-//        });
+        $('#wedding-menu a').click(function (evt) {
+            if (this.hash !== '') {
+                evt.preventDefault();
+                var hash = this.hash;
+                $('body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function () { });
+            }
+        });
     </script>
 </body>
 

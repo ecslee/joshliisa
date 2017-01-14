@@ -13,11 +13,6 @@ body {
 
 h1 {
     font-family: "JandaElegantHandwriting";
-    position: absolute;
-    display: inline;
-    z-index: 10;
-    bottom: 10%;
-    left: 10%;
 }
 
 h2 {
@@ -159,6 +154,15 @@ a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    
+    h1 {
+        position: fixed;
+        display: inline;
+        z-index: 10;
+        bottom: 10%;
+        left: 10%;
+        text-shadow: 1px 1px $teal;
+    }
     
     .background {
         height: 100vh;

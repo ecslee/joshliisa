@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/jaliisha.css" />
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#wedding-menu">
     <div class="container-fluid">
         <div class="row">
             <div id="wedding-menu" class="dropdown" style="position: fixed; top: 20px; left: 20px; z-index: 100;">
@@ -24,21 +24,21 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </span>
-                    <span>Menu<span id="menu-label">~ Aliisa & Josh</span></span>
+                    <span>Menu</span>
                 </button>
                 <ul class="dropdown-menu nav">
-                    <li class="dropdown"><a href="#countdown" class="active">Welcome</a></li>
-                    <li class="dropdown"><a href="#story">Story</a></li>
-                    <li class="dropdown"><a href="#venue">Venue</a></li>
+                    <li class="dropdown"><a href="#countdown" class="active">Aliisa & Josh</a></li>
+                    <li class="dropdown"><a href="#story">Our story</a></li>
+                    <li class="dropdown"><a href="#venue">Wedding venue</a></li>
+                    <li class="dropdown"><a href="#party">Fantastic fourteen</a></li>
                     <li class="dropdown"><a href="#registry">Registry</a></li>
-                    <li class="dropdown"><a href="#tidbits">Tidbits</a></li>
+                    <li class="dropdown"><a href="#tidbits">Little tidbits</a></li>
                 </ul>
             </div>
             <div id="welcome" class="hidden-xs col-xs-12 col-sm-7">
                 <h1>Aliisa & Josh</h1>
-<!--                <div class="background col-xs-7" style="display: block; z-index: 1; background-image: url(images/backgrounds/AJ-engagement-141.jpg);"></div>-->
             </div>
-            <div id="info" data-spy="scroll" data-target="#wedding-menu" class="col-xs-12 col-sm-5" style="height: 100vh; overflow: auto;">
+            <div id="info" class="col-xs-12 col-sm-5" style="/*height: 100vh; overflow: auto*/;">
                 <div id="countdown" class="info-section no-separator col-xs-12 col-md-10 col-md-offset-1" style="/*height: 100vh;*/ min-height: 500px; text-align: center; padding-top: 10px;">
                     <div class="img-wrapper col-xs-12 col-md-10 col-md-offset-1">
                         <img style="padding: 20px 0px;" src="images/sketches/Josh-Aliisa-banner-flowers-top.jpg">
@@ -85,6 +85,83 @@
                     </div>
                     <h2>Moorestown Community House</h2>
                     <p>The Community House is a beautiful brick and stone building, built in 1926 right on Moorestown’s Main Street. Today, it is a non-profit that serves the area for a wide range of community events.  We’ll have the building to ourselves for the afternoon; we’ll plan to do the ceremony on the beautiful front lawn, then move inside to the ballroom for our reception.  Take a look at their <a href="http://thecommunityhouse.com/" target="_blank">site</a> and <a href="https://www.google.co.id/maps/place/Moorestown+Community+House/@39.963549,-74.945771,15z/data=!4m5!3m4!1s0x0:0x4e4aa441172396cc!8m2!3d39.963549!4d-74.945771" target="_blank">location</a>!</p>
+                </div>
+                <div id="party" class="info-section col-xs-10 col-xs-offset-1" style="text-align: center;">
+                    <h2 style="margin-top: 50px;">Fantastic Fourteen</h2>
+                    <div id="party-selected" style="margin-bottom: 40px;">
+                        <div class="img-wrapper col-xs-4 col-xs-offset-4">
+                            <img class="party-face" style="border-radius: 50%;">
+                        </div>
+                        <p class="party-name"></p>
+                        <p class="party-title"></p>
+                        <p class="party-story"></p>
+                    </div>
+                    <div class="party-rows">
+                        <div id="party-amalia" class="party-person col-xs-4" data-name="Amalia Lee" data-title="maid of honor - sister of the bride" data-story="Amalia is Aliisa's medium-sister. Everyday, she is good at singing, drawing cute tiny beavers, and doing science. Years ago, Aliisa and Amalia signed a contract that says they can never be mad at each other for more than five seconds.">
+                            <div class="img-wrapper">
+                                <img class="party-face" src="images/wedding-party/bridesmaids/amalia.jpeg">
+                            </div>
+                            <p class="party-name">AMALIA<span class="party-last-name"> LEE</span></p>
+                            <p class="party-title">MAID OF HONOR</p>
+                        </div>
+                        <div id="party-avelina" class="party-person col-xs-4" data-name="Avelina Lee" data-title="bridesmaid - sister of the bride" data-story="Avelina (or Avi) is Aliisa's littlest sister. She is a world-class baker, hair-expert, linguist, and baby boss. Avi's love for Aliisa -- expressed by giving her food and cuddles -- is only surpassed by Avi's love for her cat, Yupi.">
+                            <div class="img-wrapper">
+                                <img class="party-face" src="images/wedding-party/bridesmaids/avi.jpeg">
+                            </div>
+                            <p class="party-name">AVELINA<span class="party-last-name"> LEE</span></p>
+                            <p class="party-title">BRIDESMAID</p>
+                        </div>
+                        <div id="party-annika" class="party-person col-xs-4" data-name="Annika Lee" data-title="bridesmaid - sister of the bride" data-story="Annika is Aliisa's little big sister. She is amazing at drawing, speaking Japanese, and having information about everything. Annika is in charge of sending Aliisa art inspiration, interesting news, and pictures of other people's dogs.">
+                            <div class="img-wrapper">
+                                <img class="party-face" src="images/wedding-party/bridesmaids/annika.jpeg">
+                            </div>
+                            <p class="party-name">ANNIKA<span class="party-last-name"> LEE</span></p>
+                            <p class="party-title">BRIDESMAID</p>
+                        </div>
+                        <div id="party-emily" class="party-person col-xs-4" data-name="Emily Lee" data-title="bridesmaid - sister-in-law" data-story="Aliisa got another sister when Emily married Anders! Emily is a coder, photographer, and perfect blend of creativity and organization. Emily is also a fun lifeline of sanity and Pinterest ideas when Aliisa desperately texts her for life help.">
+                            <div class="img-wrapper">
+                                <img class="party-face" src="images/wedding-party/bridesmaids/emily.JPG">
+                            </div>
+                            <p class="party-name">EMILY<span class="party-last-name"> LEE</span></p>
+                            <p class="party-title">BRIDESMAID</p>
+                        </div>
+                        <div id="party-alissa" class="party-person col-xs-4" data-name="Alissa Hopper" data-title="bridesmaid - college friend" data-story="This is Alissa.  Aliisa and Alissa bonded as Princeton classmates with oddly similar names.">
+                            <div class="img-wrapper">
+                                <img class="party-face" src="images/wedding-party/bridesmaids/alissa.jpg">
+                            </div>
+                            <p class="party-name">ALISSA<span class="party-last-name"> HOPPER</span></p>
+                            <p class="party-title">BRIDESMAID</p>
+                        </div>
+                        <div id="party-miriam" class="party-person col-xs-4" data-name="Miriam Black" data-title="bridesmaid - sister of the groom" data-story="This is Miriam.  I haven't met her yet, but she seems friendly and has a cute kid.">
+                            <div class="img-wrapper">
+                                <img class="party-face" src="images/wedding-party/bridesmaids/miriam.jpg">
+                            </div>
+                            <p class="party-name">MIRIAM<span class="party-last-name"> BLACK</span></p>
+                            <p class="party-title">BRIDESMAID</p>
+                        </div>
+                        <div id="party-andrew" class="party-person col-xs-4" data-name="Andrew Black" data-title="groomsman - brother-in-law" data-story="This is Andrew.  He married Josh's sister Miriam.">
+                            <div class="img-wrapper">
+                                <img class="party-face" src="images/wedding-party/groomsmen/andrew.jpg">
+                            </div>
+                            <p class="party-name">ANDREW<span class="party-last-name"> BLACK</span></p>
+                            <p class="party-title">GROOMSMAN</p>
+                        </div>
+                        <div id="party-anders" class="party-person col-xs-4" data-name="Anders Lee" data-title="groomsman - brother of the bride" data-story="This is Anders.  He is Aliisa's coolest older brother.">
+                            <div class="img-wrapper">
+                                <img class="party-face" src="images/wedding-party/groomsmen/anders.JPG">
+                            </div>
+                            <p class="party-name">ANDERS<span class="party-last-name"> LEE</span></p>
+                            <p class="party-title">GROOMSMAN</p>
+                        </div>
+                        <div id="party-aleksi" class="party-person col-xs-4" data-name="Aleksi Lee" data-title="groomsman - brother of the bride" data-story="This is Aleksi.  He is Aliisa's oldest older brother.">
+                            <div class="img-wrapper">
+                                <img class="party-face" src="images/wedding-party/groomsmen/aleksi.JPG">
+                            </div>
+                            <p class="party-name">ALEKSI<span class="party-last-name"> LEE</span></p>
+                            <p class="party-title">GROOMSMAN</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
                 <div id="registry" class="info-section col-xs-12 col-md-10 col-md-offset-1" style="text-align: center;">
                     <h2>Registry</h2>
@@ -290,15 +367,15 @@
             }, 250);
         });
         
-//        $('#wedding-menu a').click(function (evt) {
-//            if (this.hash !== '') {
-//                evt.preventDefault();
-//                var hash = this.hash;
-//                $('body').animate({
-//                    scrollTop: $(hash).offset().top
-//                }, 500, function () { });
-//            }
-//        });
+        $('#wedding-menu a').click(function (evt) {
+            if (this.hash !== '') {
+                evt.preventDefault();
+                var hash = this.hash;
+                $('body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function () { });
+            }
+        });
     </script>
 </body>
 

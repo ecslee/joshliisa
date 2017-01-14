@@ -1,7 +1,7 @@
 /* main */
 body { font-family: "BoosterNextFY", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 300; color: #555; font-size: 12pt; }
 
-h1 { font-family: "JandaElegantHandwriting"; position: absolute; display: inline; z-index: 10; bottom: 10%; left: 10%; }
+h1 { font-family: "JandaElegantHandwriting"; }
 
 h2 { font-family: "JandaElegantHandwriting"; color: #2b6c5b; margin-top: 20px; margin-bottom: 20px; font-size: 24px; text-align: center; }
 
@@ -48,6 +48,8 @@ a:hover { color: #2b6c5b; }
 
 /* welcome section */
 #welcome { height: 100vh; overflow: hidden; color: white; padding: 0px; background-image: url("../images/AJ-engagement-141.jpg"); background-repeat: no-repeat; background-position: center; background-size: cover; }
+
+#welcome h1 { position: fixed; display: inline; z-index: 10; bottom: 10%; left: 10%; text-shadow: 1px 1px #2b6c5b; }
 
 #welcome .background { height: 100vh; background-repeat: no-repeat; background-position: center; background-size: cover; display: none; position: fixed; }
 

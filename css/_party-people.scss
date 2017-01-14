@@ -23,6 +23,21 @@
     }
 }
 
+.party-rows {
+    .party-person {
+        margin-bottom: 20px;
+        
+        .party-name {
+            margin-bottom: 10px;
+            display: none;
+        }
+
+        .party-title {
+            display: none;
+        }
+    }
+}
+
 .party-story {
     font-weight: 100;
 }
@@ -30,7 +45,7 @@
 .party-person {
     &.active {
         .party-face {
-            border: 2px solid $teal;
+            border: 2px solid $orange;
         }
     }
 }

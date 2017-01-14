@@ -86,9 +86,15 @@ a:hover { color: #2b6c5b; }
 
 @media (max-width: 767px) { .party-title { font-size: 8pt; } }
 
+.party-rows .party-person { margin-bottom: 20px; }
+
+.party-rows .party-person .party-name { margin-bottom: 10px; display: none; }
+
+.party-rows .party-person .party-title { display: none; }
+
 .party-story { font-weight: 100; }
 
-.party-person.active .party-face { border: 2px solid #2b6c5b; }
+.party-person.active .party-face { border: 2px solid #fd6223; }
 
 #party-selected .party-face { border: 2px solid #2b6c5b; border-radius: 50%; margin-bottom: 10px; }
 

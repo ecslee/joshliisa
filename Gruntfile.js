@@ -21,6 +21,9 @@ module.exports = function (grunt) {
             index: {
                 src: ["index.html", "index.js", "work-in-progress.html"]
             },
+            js: {
+                src: "js/**"
+            },
             libs: {
                 src: "libs/**"
             }

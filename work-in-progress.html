@@ -96,71 +96,7 @@
                         <p class="party-title"></p>
                         <p class="party-story"></p>
                     </div>
-                    <div class="party-rows">
-                        <div id="party-amalia" class="party-person col-xs-4" data-name="Amalia Lee" data-title="maid of honor - sister of the bride" data-story="Amalia is Aliisa's medium-sister. Everyday, she is good at singing, drawing cute tiny beavers, and doing science. Years ago, Aliisa and Amalia signed a contract that says they can never be mad at each other for more than five seconds.">
-                            <div class="img-wrapper">
-                                <img class="party-face" src="images/wedding-party/bridesmaids/amalia.jpeg">
-                            </div>
-                            <p class="party-name">AMALIA<span class="party-last-name"> LEE</span></p>
-                            <p class="party-title">MAID OF HONOR</p>
-                        </div>
-                        <div id="party-avelina" class="party-person col-xs-4" data-name="Avelina Lee" data-title="bridesmaid - sister of the bride" data-story="Avelina (or Avi) is Aliisa's littlest sister. She is a world-class baker, hair-expert, linguist, and baby boss. Avi's love for Aliisa -- expressed by giving her food and cuddles -- is only surpassed by Avi's love for her cat, Yupi.">
-                            <div class="img-wrapper">
-                                <img class="party-face" src="images/wedding-party/bridesmaids/avi.jpeg">
-                            </div>
-                            <p class="party-name">AVELINA<span class="party-last-name"> LEE</span></p>
-                            <p class="party-title">BRIDESMAID</p>
-                        </div>
-                        <div id="party-annika" class="party-person col-xs-4" data-name="Annika Lee" data-title="bridesmaid - sister of the bride" data-story="Annika is Aliisa's little big sister. She is amazing at drawing, speaking Japanese, and having information about everything. Annika is in charge of sending Aliisa art inspiration, interesting news, and pictures of other people's dogs.">
-                            <div class="img-wrapper">
-                                <img class="party-face" src="images/wedding-party/bridesmaids/annika.jpeg">
-                            </div>
-                            <p class="party-name">ANNIKA<span class="party-last-name"> LEE</span></p>
-                            <p class="party-title">BRIDESMAID</p>
-                        </div>
-                        <div id="party-emily" class="party-person col-xs-4" data-name="Emily Lee" data-title="bridesmaid - sister-in-law" data-story="Aliisa got another sister when Emily married Anders! Emily is a coder, photographer, and perfect blend of creativity and organization. Emily is also a fun lifeline of sanity and Pinterest ideas when Aliisa desperately texts her for life help.">
-                            <div class="img-wrapper">
-                                <img class="party-face" src="images/wedding-party/bridesmaids/emily.JPG">
-                            </div>
-                            <p class="party-name">EMILY<span class="party-last-name"> LEE</span></p>
-                            <p class="party-title">BRIDESMAID</p>
-                        </div>
-                        <div id="party-alissa" class="party-person col-xs-4" data-name="Alissa Hopper" data-title="bridesmaid - college friend" data-story="This is Alissa.  Aliisa and Alissa bonded as Princeton classmates with oddly similar names.">
-                            <div class="img-wrapper">
-                                <img class="party-face" src="images/wedding-party/bridesmaids/alissa.jpg">
-                            </div>
-                            <p class="party-name">ALISSA<span class="party-last-name"> HOPPER</span></p>
-                            <p class="party-title">BRIDESMAID</p>
-                        </div>
-                        <div id="party-miriam" class="party-person col-xs-4" data-name="Miriam Black" data-title="bridesmaid - sister of the groom" data-story="This is Miriam.  I haven't met her yet, but she seems friendly and has a cute kid.">
-                            <div class="img-wrapper">
-                                <img class="party-face" src="images/wedding-party/bridesmaids/miriam.jpg">
-                            </div>
-                            <p class="party-name">MIRIAM<span class="party-last-name"> BLACK</span></p>
-                            <p class="party-title">BRIDESMAID</p>
-                        </div>
-                        <div id="party-andrew" class="party-person col-xs-4" data-name="Andrew Black" data-title="groomsman - brother-in-law" data-story="This is Andrew.  He married Josh's sister Miriam.">
-                            <div class="img-wrapper">
-                                <img class="party-face" src="images/wedding-party/groomsmen/andrew.jpg">
-                            </div>
-                            <p class="party-name">ANDREW<span class="party-last-name"> BLACK</span></p>
-                            <p class="party-title">GROOMSMAN</p>
-                        </div>
-                        <div id="party-anders" class="party-person col-xs-4" data-name="Anders Lee" data-title="groomsman - brother of the bride" data-story="This is Anders.  He is Aliisa's coolest older brother.">
-                            <div class="img-wrapper">
-                                <img class="party-face" src="images/wedding-party/groomsmen/anders.JPG">
-                            </div>
-                            <p class="party-name">ANDERS<span class="party-last-name"> LEE</span></p>
-                            <p class="party-title">GROOMSMAN</p>
-                        </div>
-                        <div id="party-aleksi" class="party-person col-xs-4" data-name="Aleksi Lee" data-title="groomsman - brother of the bride" data-story="This is Aleksi.  He is Aliisa's oldest older brother.">
-                            <div class="img-wrapper">
-                                <img class="party-face" src="images/wedding-party/groomsmen/aleksi.JPG">
-                            </div>
-                            <p class="party-name">ALEKSI<span class="party-last-name"> LEE</span></p>
-                            <p class="party-title">GROOMSMAN</p>
-                        </div>
-                    </div>
+                    <div class="party-rows"></div>
                     <div class="clearfix"></div>
                 </div>
                 <div id="registry" class="info-section col-xs-12 col-md-10 col-md-offset-1" style="text-align: center;">
@@ -290,17 +226,6 @@
         var countdownInterval = setInterval(setCountdown, 1000);
         setCountdown();
         
-        // clicking bridal party
-        $('.party-rows .party-person').click(function () {
-            $('.party-rows .party-person').removeClass('active');
-            $(this).addClass('active');
-            $('#party-selected img')[0].src = $(this).find('img')[0].src;
-            $('#party-selected .party-name').text($(this).data('name').toUpperCase());
-            $('#party-selected .party-title').text($(this).data('title').toUpperCase());
-            $('#party-selected .party-story').text($(this).data('story'));
-        });
-        $('#party-amalia').click();
-        
         // scrolling picture
         var picMap = {
             '#countdown': '141',
@@ -377,6 +302,7 @@
             }
         });
     </script>
+    <script type="text/javascript" src="js/party-people.js"></script>
 </body>
 
 </html>

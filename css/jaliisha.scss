@@ -102,17 +102,15 @@ a:hover {
 }
 
 .navbar-toggle {
-    background: -webkit-radial-gradient(center, ellipse, rgba(0,0,0,.1) 0, rgba(0,0,0,.1) 4%, transparent 78%);
-    background: radial-gradient(ellipse at center,rgba(0,0,0,.1) 0,rgba(0,0,0,.1) 4%,transparent 78%);
-    background: linear-gradient(center, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1), rgba(0, 0, 0, .1), transparent 78%);
-    background-repeat: no-repeat;
     color: white;
+    text-shadow: 1px 1px 1px $teal;
     display: block;
     
     .icon-bar {
         height: 2px;
         border-radius: 1px;
         border: 1px solid white;
+        box-shadow: 1px 1px 1px $teal;
     }
     
     #menu-label {
@@ -161,7 +159,7 @@ a:hover {
         z-index: 10;
         bottom: 10%;
         left: 10%;
-        text-shadow: 1px 1px $teal;
+        text-shadow: 1px 1px 1px $teal;
     }
     
     .background {

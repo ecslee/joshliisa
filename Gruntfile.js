@@ -27,14 +27,14 @@ module.exports = function (grunt) {
         },
         sass: {
             options: {
-                sourceMap: true,
+                sourceMap: false,
                 indentedSyntax: true,
                 outputStyle: "compact",
-                sourceComments: true
+                sourceComments: false
             },
             dist: {
                 files: {
-                    "css/fonts.css": "css/fonts.scss"
+                    "css/jaliisha.css": "css/jaliisha.scss"
                 }
             }
             

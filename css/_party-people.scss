@@ -1,0 +1,44 @@
+/* party people */
+
+.party-name {
+    font-size: 10pt;
+    font-weight: 600;
+    margin: 10px 0px 0px;
+    
+    .party-last-name {
+        display: none;
+        
+        @media (max-width: 767px) {
+            font-size: 9pt;
+        }
+    }
+}
+
+.party-title {
+    font-size: 9pt;
+    font-weight: 300;
+    
+    @media (max-width: 767px) {
+        font-size: 8pt;
+    }
+}
+
+.party-story {
+    font-weight: 100;
+}
+
+.party-person {
+    &.active {
+        .party-face {
+            border: 2px solid $teal;
+        }
+    }
+}
+
+#party-selected {
+    .party-face {
+        border: 2px solid $teal;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+}

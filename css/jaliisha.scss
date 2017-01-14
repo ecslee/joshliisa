@@ -1,0 +1,190 @@
+$teal: rgb(43, 108, 91);
+$teal-trans: rgba(43, 108, 91, 0.8);
+$orange: rgb(253, 98, 35);
+
+/* main */
+
+body {
+    font-family: "BoosterNextFY", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    color: #555;
+    font-size: 12pt;
+}
+
+h1 {
+    font-family: "JandaElegantHandwriting";
+    position: absolute;
+    display: inline;
+    z-index: 10;
+    bottom: 10%;
+    left: 10%;
+}
+
+h2 {
+    font-family: "JandaElegantHandwriting";
+    color: $teal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+a {
+    color: $orange;
+}
+
+a:hover {
+    color: $teal;
+}
+
+.info-section {
+    padding-top: 50px;
+    
+    &::after {
+        display: block;
+        content: "";
+        background: url("../images/DigitalGoldFoilGraphics/GoldFineMessyLine.png") no-repeat center;
+        background-size: contain;
+        min-height: 5px;
+        margin: 50px auto 0px auto;
+    }
+    
+    &.no-separator::after,
+    &:last-of-type::after {
+        display: block;
+        content: "";
+        background: none;
+    }
+    
+    img {
+        padding: 0px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.img-wrapper {
+    padding: 0px;
+    float: none;
+}
+
+/* first letter drop */
+.firstletter {
+    font-family: "JandaElegantHandwriting";
+    float: left;
+    color: $teal;
+    font-size: 64px;
+    line-height: 43px;
+    padding-top: 22px;
+    padding-right: 10px;
+    /* padding-left: 3px; */
+    font-weight: 300;
+}
+
+/* nav */
+
+.dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.8);
+    
+    > li > a:hover {
+        background-color: $teal;
+        background-color: $teal-trans;
+    }
+    
+    > .active > a,
+    > .active > a:hover {
+        background-color: $teal;
+        background-color: $teal-trans;
+    }
+}
+
+.dropdown.open #menu-label {
+    display: inline-block;
+}
+
+.navbar-toggle {
+    background: -webkit-radial-gradient(center, ellipse, rgba(0,0,0,.1) 0, rgba(0,0,0,.1) 4%, transparent 78%);
+    background: radial-gradient(ellipse at center,rgba(0,0,0,.1) 0,rgba(0,0,0,.1) 4%,transparent 78%);
+    background: linear-gradient(center, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1), rgba(0, 0, 0, .1), transparent 78%);
+    background-repeat: no-repeat;
+    color: white;
+    display: block;
+    
+    .icon-bar {
+        height: 2px;
+        border-radius: 1px;
+        border: 1px solid white;
+    }
+    
+    #menu-label {
+        display: none;
+        color: white;
+        margin-left: 10px;
+    }
+    
+    &:hover {
+       .icon-bar {
+            border-color: $orange;
+            border-color: $teal;
+        }
+        
+        #menu-label {
+            display: inline-block;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        background: none;
+        padding: 0px;
+        margin: 0px;
+
+        .icon-bar {
+            border-color: $teal;
+        }
+    }
+}
+
+/* welcome section */
+
+#welcome {
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    padding: 0px;
+    background-image: url("../images/AJ-engagement-141.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    .background {
+        height: 100vh;
+//        width: 100%;
+//        background-image: url("../images/AJ-engagement-141.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: none;
+        position: fixed;
+    }
+}
+
+/* special thanks */
+
+#thanks {
+    h2:hover {
+        color: $orange;
+        cursor: pointer;
+    }
+    
+    #thanks-wrapper {
+        display: none;
+    }
+}
+
+@import "tidbits";
+@import "party-people";
+@import "fonts";

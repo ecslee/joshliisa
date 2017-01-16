@@ -113,20 +113,10 @@ a:hover {
         box-shadow: 1px 1px 1px $teal;
     }
     
-    #menu-label {
-        display: none;
-        color: white;
-        margin-left: 10px;
-    }
-    
     &:hover {
        .icon-bar {
             border-color: $orange;
             border-color: $teal;
-        }
-        
-        #menu-label {
-            display: inline-block;
         }
     }
     
@@ -137,6 +127,11 @@ a:hover {
 
         .icon-bar {
             border-color: $teal;
+            box-shadow: none;
+        }
+        
+        .menu-label {
+            display: none;
         }
     }
 }
@@ -171,19 +166,6 @@ a:hover {
         background-size: cover;
         display: none;
         position: fixed;
-    }
-}
-
-/* special thanks */
-
-#thanks {
-    h2:hover {
-        color: $orange;
-        cursor: pointer;
-    }
-    
-    #thanks-wrapper {
-        display: none;
     }
 }
 

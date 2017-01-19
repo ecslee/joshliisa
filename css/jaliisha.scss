@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-    font-family: "JandaElegantHandwriting";
+    font-family: "Pillowbook";
 }
 
 h2 {
@@ -95,6 +95,11 @@ a:hover {
         background-color: $teal;
         background-color: $teal-trans;
     }
+    
+    .divider {
+        background-color: $teal;
+        margin: 3px 10px;
+    }
 }
 
 .dropdown.open #menu-label {
@@ -153,7 +158,7 @@ a:hover {
         display: inline;
         z-index: 10;
         bottom: 10%;
-        left: 10%;
+        left: 8%;
         text-shadow: 1px 1px 1px $teal;
     }
     
@@ -171,4 +176,5 @@ a:hover {
 
 @import "tidbits";
 @import "party-people";
+@import "gallery";
 @import "fonts";

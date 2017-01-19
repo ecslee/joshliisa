@@ -1,7 +1,7 @@
 /* main */
 body { font-family: "BoosterNextFY", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 300; color: #555; font-size: 12pt; }
 
-h1 { font-family: "JandaElegantHandwriting"; }
+h1 { font-family: "Pillowbook"; }
 
 h2 { font-family: "JandaElegantHandwriting"; color: #2b6c5b; margin-top: 20px; margin-bottom: 20px; font-size: 24px; text-align: center; }
 
@@ -12,11 +12,8 @@ a { color: #fd6223; }
 a:hover { color: #2b6c5b; }
 
 .info-section { padding-top: 50px; }
-
 .info-section::after { display: block; content: ""; background: url("../images/DigitalGoldFoilGraphics/GoldFineMessyLine.png") no-repeat center; background-size: contain; min-height: 5px; margin: 50px auto 0px auto; }
-
 .info-section.no-separator::after, .info-section:last-of-type::after { display: block; content: ""; background: none; }
-
 .info-section img { padding: 0px; width: 100%; height: auto; }
 
 .img-wrapper { padding: 0px; float: none; }
@@ -26,62 +23,44 @@ a:hover { color: #2b6c5b; }
 
 /* nav */
 .dropdown-menu { background-color: rgba(255, 255, 255, 0.8); }
-
 .dropdown-menu > li > a:hover { background-color: #2b6c5b; background-color: rgba(43, 108, 91, 0.8); }
-
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover { background-color: #2b6c5b; background-color: rgba(43, 108, 91, 0.8); }
+.dropdown-menu .divider { background-color: #2b6c5b; margin: 3px 10px; }
 
 .dropdown.open #menu-label { display: inline-block; }
 
 .navbar-toggle { color: white; text-shadow: 1px 1px 1px #2b6c5b; display: block; }
-
 .navbar-toggle .icon-bar { height: 2px; border-radius: 1px; border: 1px solid white; box-shadow: 1px 1px 1px #2b6c5b; }
-
 .navbar-toggle:hover .icon-bar { border-color: #fd6223; border-color: #2b6c5b; }
-
 @media (max-width: 767px) { .navbar-toggle { background: none; padding: 0px; margin: 0px; }
   .navbar-toggle .icon-bar { border-color: #2b6c5b; box-shadow: none; }
   .navbar-toggle .menu-label { display: none; } }
 
 /* welcome section */
 #welcome { height: 100vh; overflow: hidden; color: white; padding: 0px; background-image: url("../images/AJ-engagement-141.jpg"); background-repeat: no-repeat; background-position: center; background-size: cover; }
-
-#welcome h1 { position: fixed; display: inline; z-index: 10; bottom: 10%; left: 10%; text-shadow: 1px 1px 1px #2b6c5b; }
-
+#welcome h1 { position: fixed; display: inline; z-index: 10; bottom: 10%; left: 8%; text-shadow: 1px 1px 1px #2b6c5b; }
 #welcome .background { height: 100vh; background-repeat: no-repeat; background-position: center; background-size: cover; display: none; position: fixed; }
 
 /* tidbits */
 #tidbits .tidbit-q, #tidbits .tidbit-a { padding-left: 22px; }
-
 #tidbits .tidbit-q { font-size: 12pt; font-weight: normal; margin-top: 30px; }
-
 #tidbits .tidbit-q:first-of-type { margin-top: 0px; }
-
 #tidbits .tidbit-q::before { content: "Q"; font-size: 14pt; font-family: "JandaElegantHandwriting"; color: #2b6c5b; position: relative; top: 2px; margin-left: -30px; margin-right: 12px; }
-
 #tidbits .tidbit-q:hover { cursor: pointer; }
-
 #tidbits .tidbit-q:hover::before { color: #fd6223; }
-
 #tidbits .tidbit-a { font-weight: 100; display: none; }
-
 #tidbits .tidbit-a.tidbit-show { display: block; }
 
 /* party people */
 .party-name { font-size: 10pt; font-weight: 600; margin: 10px 0px 0px; }
-
 .party-name .party-last-name { display: none; }
-
 @media (max-width: 767px) { .party-name .party-last-name { font-size: 9pt; } }
 
 .party-title { font-size: 9pt; font-weight: 300; }
-
 @media (max-width: 767px) { .party-title { font-size: 8pt; } }
 
 .party-rows .party-person { margin-bottom: 20px; }
-
 .party-rows .party-person .party-name { margin-bottom: 10px; display: none; }
-
 .party-rows .party-person .party-title { display: none; }
 
 .party-story { font-weight: 100; }
@@ -90,36 +69,27 @@ a:hover { color: #2b6c5b; }
 
 #party-selected .party-face { border: 2px solid #2b6c5b; border-radius: 50%; margin-bottom: 10px; }
 
+#preview { height: 100vh; background-position: center; background-repeat: no-repeat; background-size: cover; }
+
+.gallery-img { border: 1px solid teal; margin: 5px; display: inline-block; background-position: center; background-size: cover; background-repeat: no-repeat; }
+
 /* fonts */
 /* BoosterNextFY */
 @font-face { font-family: 'BoosterNextFY'; src: url("fonts/booster-next/Black/BoosterNextFY-Black.eot"); src: url("fonts/booster-next/Black/BoosterNextFY-Black.eot?#iefix") format("embedded-opentype"), url("fonts/booster-next/Black/BoosterNextFY-Black.woff") format("woff"), url("fonts/booster-next/Black/BoosterNextFY-Black.ttf") format("truetype"), url("fonts/booster-next/Black/BoosterNextFY-Black.svg#Booster Next FY Black") format("svg"); font-weight: 900; font-style: normal; }
-
 @font-face { font-family: 'BoosterNextFY'; src: url("fonts/booster-next/Bold/BoosterNextFY-Bold.eot"); src: url("fonts/booster-next/Bold/BoosterNextFY-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/booster-next/Bold/BoosterNextFY-Bold.woff") format("woff"), url("fonts/booster-next/Bold/BoosterNextFY-Bold.ttf") format("truetype"), url("fonts/booster-next/Bold/BoosterNextFY-Bold.svg#Booster Next FY Bold") format("svg"); font-weight: bold; font-style: normal; }
-
 @font-face { font-family: 'BoosterNextFY'; src: url("fonts/booster-next/Medium/BoosterNextFY-Medium.eot"); src: url("fonts/booster-next/Medium/BoosterNextFY-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/booster-next/Medium/BoosterNextFY-Medium.woff") format("woff"), url("fonts/booster-next/Medium/BoosterNextFY-Medium.ttf") format("truetype"), url("fonts/booster-next/Medium/BoosterNextFY-Medium.svg#Booster Next FY Medium") format("svg"); font-weight: 600; font-style: normal; }
-
 @font-face { font-family: 'BoosterNextFY'; src: url("fonts/booster-next/Regular/BoosterNextFY-Regular.eot"); src: url("fonts/booster-next/Regular/BoosterNextFY-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/booster-next/Regular/BoosterNextFY-Regular.woff") format("woff"), url("fonts/booster-next/Regular/BoosterNextFY-Regular.ttf") format("truetype"), url("fonts/booster-next/Regular/BoosterNextFY-Regular.svg#Booster Next FY Regular") format("svg"); font-weight: normal; font-style: normal; }
-
 @font-face { font-family: 'BoosterNextFY'; src: url("fonts/booster-next/Light/BoosterNextFY-Light.eot"); src: url("fonts/booster-next/Light/BoosterNextFY-Light.eot?#iefix") format("embedded-opentype"), url("fonts/booster-next/Light/BoosterNextFY-Light.woff") format("woff"), url("fonts/booster-next/Light/BoosterNextFY-Light.ttf") format("truetype"), url("fonts/booster-next/Light/BoosterNextFY-Light.svg#Booster Next FY Light") format("svg"); font-weight: 300; font-style: normal; }
-
 @font-face { font-family: 'BoosterNextFY'; src: url("fonts/booster-next/Thin/BoosterNextFY-Thin.eot"); src: url("fonts/booster-next/Thin/BoosterNextFY-Thin.eot?#iefix") format("embedded-opentype"), url("fonts/booster-next/Thin/BoosterNextFY-Thin.woff") format("woff"), url("fonts/booster-next/Thin/BoosterNextFY-Thin.ttf") format("truetype"), url("fonts/booster-next/Thin/BoosterNextFY-Thin.svg#Booster Next FY Thin") format("svg"); font-weight: 100; font-style: normal; }
-
 /* Champagne and Limousines */
 @font-face { font-family: 'Champagne&Limousines'; src: url("fonts/champagne-limousines/champagnelimousines-webfont.eot"); src: url("fonts/champagne-limousines/champagnelimousines-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/champagne-limousines/champagnelimousines-webfont.woff") format("woff"), url("fonts/champagne-limousines/champagnelimousines-webfont.ttf") format("truetype"), url("fonts/champagne-limousines/champagnelimousines-webfont.svg#champagne__limousinesregular") format("svg"); font-weight: normal; font-style: normal; }
-
 @font-face { font-family: 'Champagne&LimousinesBold'; src: url("fonts/champagne-limousines/champagnelimousinesbold-webfont.eot"); src: url("fonts/champagne-limousines/champagnelimousinesbold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/champagne-limousines/champagnelimousinesbold-webfont.woff") format("woff"), url("fonts/champagne-limousines/champagnelimousinesbold-webfont.ttf") format("truetype"), url("fonts/champagne-limousines/champagnelimousinesbold-webfont.svg#champagne__limousinesbold") format("svg"); font-weight: normal; font-style: normal; }
-
 @font-face { font-family: 'Champagne&LimousinesItalic'; src: url("fonts/champagne-limousines/champagnelimousinesitalic-webfont.eot"); src: url("fonts/champagne-limousines/champagnelimousinesitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/champagne-limousines/champagnelimousinesitalic-webfont.woff") format("woff"), url("fonts/champagne-limousines/champagnelimousinesitalic-webfont.ttf") format("truetype"), url("fonts/champagne-limousines/champagnelimousinesitalic-webfont.svg#champagne__limousinesitalic") format("svg"); font-weight: normal; font-style: normal; }
-
 @font-face { font-family: 'Champagne&LimousinesBoldItalic'; src: url("fonts/champagne-limousines/champagnelimousinesbolditalic-webfont.eot"); src: url("fonts/fonts/champagne-limousines/champagnelimousinesbolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/champagne-limousines/champagnelimousinesbolditalic-webfont.woff") format("woff"), url("fonts/fonts/champagne-limousines/champagnelimousinesbolditalic-webfont.ttf") format("truetype"), url("fonts/champagne-limousines/champagnelimousinesbolditalic-webfont.svg#champagne__limousinesBdIt") format("svg"); font-weight: normal; font-style: normal; }
-
 /* Janda Elegant Handwriting */
 @font-face { font-family: 'JandaElegantHandwriting'; src: url("fonts/janda-elegant/jandaeleganthandwriting-webfont.woff") format("woff"), url("fonts/janda-elegant/JandaElegantHandwriting.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-
 /* Pillowbook */
 @font-face { font-family: 'Pillowbook'; src: url("fonts/pillowbook/pillowbook-regular/pillowbook-regular-webfont.eot"); src: url("fonts/pillowbook/pillowbook-regular/pillowbook-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/pillowbook/pillowbook-regular/pillowbook-regular-webfont.woff") format("woff"), url("fonts/pillowbook/pillowbook-regular/pillowbook-regular-webfont.ttf") format("truetype"), url("fonts/pillowbook/pillowbook-regular/pillowbook-regular-webfont.svg#pillowbookregular") format("svg"); font-weight: normal; font-style: normal; }
-
 @font-face { font-family: 'PillowbookOrnaments'; src: url("fonts/pillowbook/pillowbook-ornaments/pillowbook-ornaments-webfont.eot"); src: url("fonts/pillowbook/pillowbook-ornaments/pillowbook-ornaments-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/pillowbook/pillowbook-ornaments/pillowbook-ornaments-webfont.woff") format("woff"), url("fonts/pillowbook/pillowbook-ornaments/pillowbook-ornaments-webfont.ttf") format("truetype"), url("fonts/pillowbook/pillowbook-ornaments/pillowbook-ornaments-webfont.svg#pillowbook_ornaments") format("svg"); font-weight: normal; font-style: normal; }
-
 /* SUNN */
 @font-face { font-family: 'SUNN'; src: url("fonts/sunn/sunn-webfont.woff") format("woff"), url("fonts/sunn/SUNN.otf") format("opentype"); font-weight: normal; font-style: normal; }

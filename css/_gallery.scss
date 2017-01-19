@@ -1,0 +1,17 @@
+#preview {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gallery-img {
+    //width: 120px;
+    //height: 120px;
+    border: 1px solid teal;
+    margin: 5px;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

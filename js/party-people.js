@@ -120,8 +120,6 @@ for (var party in parties) {
         }).data('name', person.name)
           .data('label', person.label)
           .data('story', person.story);
-        
-        console.log(person);
 
         var $face = $('<div/>', {
             'class': 'img-wrapper'

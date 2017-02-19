@@ -81,6 +81,12 @@ a:hover {
 }
 
 /* nav */
+#wedding-menu.dropdown {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
 
 .dropdown-menu {
     background-color: rgba(255, 255, 255, 0.8);
@@ -106,11 +112,16 @@ a:hover {
     text-shadow: 1px 1px 1px $teal;
     display: block;
     
-    .icon-bar {
-        height: 2px;
-        border-radius: 1px;
-        border: 1px solid white;
-        box-shadow: 1px 1px 1px $teal;
+    .menu-bars {
+        display: inline-block;
+        margin-right: 10px;
+        
+        .icon-bar {
+            height: 2px;
+            border-radius: 1px;
+            border: 1px solid white;
+            box-shadow: 1px 1px 1px $teal;
+        }
     }
     
     &:hover {
@@ -166,6 +177,90 @@ a:hover {
         background-size: cover;
         display: none;
         position: fixed;
+    }
+}
+
+/* info */
+
+#countdown {
+    min-height: 500px;
+    text-align: center;
+    padding-top: 10px;
+    
+    img {
+        padding: 20px 0px;
+    }
+    
+    #top-names {
+        margin-top: 20px;
+        text-align: center;
+        font-family: 'Pillowbook';
+        font-size: 30pt;
+        line-height: 40px;
+        
+        #top-names-and {
+            font-family: 'PillowbookOrnaments';
+        }
+    }
+    
+    #countdown-info-wrapper {
+        margin: 20px auto;
+        font-size: 14pt;
+        
+        #countdown-hrs-label,
+        #countdown-min-label,
+        #countdown-sec-label {
+            display: none;
+        }
+    }
+}
+
+/* story */
+
+#story {
+    .img-wrapper {
+        margin: 15px auto;
+    }
+}
+
+/* registry */
+
+#registry {
+    text-align: center;
+}
+
+/* tidbits */
+
+#tidbits {
+    #tidbits-intro {
+        text-align: center;
+        font-style: italic;
+        font-weight: 100;
+    }
+    
+    .img-wrapper {
+        margin: 15px auto;
+    }
+}
+
+/* thanks */
+
+#thanks {
+    .img-wrapper {
+        float: left;
+    }
+    
+    p {
+        font-weight: 200;
+        margin-bottom: 20px;
+        
+        &:last-of-type {
+            margin-bottom: 0px;
+        }
+        
+        .name {
+            font-weight: 600;
+        }
     }
 }
 

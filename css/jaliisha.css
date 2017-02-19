@@ -22,6 +22,8 @@ a:hover { color: #2b6c5b; }
 .firstletter { font-family: "JandaElegantHandwriting"; float: left; color: #2b6c5b; font-size: 64px; line-height: 43px; padding-top: 22px; padding-right: 10px; /* padding-left: 3px; */ font-weight: 300; }
 
 /* nav */
+#wedding-menu.dropdown { position: fixed; top: 20px; left: 20px; z-index: 100; }
+
 .dropdown-menu { background-color: rgba(255, 255, 255, 0.8); }
 .dropdown-menu > li > a:hover { background-color: #2b6c5b; background-color: rgba(43, 108, 91, 0.8); }
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover { background-color: #2b6c5b; background-color: rgba(43, 108, 91, 0.8); }
@@ -29,7 +31,8 @@ a:hover { color: #2b6c5b; }
 .dropdown.open #menu-label { display: inline-block; }
 
 .navbar-toggle { color: white; text-shadow: 1px 1px 1px #2b6c5b; display: block; }
-.navbar-toggle .icon-bar { height: 2px; border-radius: 1px; border: 1px solid white; box-shadow: 1px 1px 1px #2b6c5b; }
+.navbar-toggle .menu-bars { display: inline-block; margin-right: 10px; }
+.navbar-toggle .menu-bars .icon-bar { height: 2px; border-radius: 1px; border: 1px solid white; box-shadow: 1px 1px 1px #2b6c5b; }
 .navbar-toggle:hover .icon-bar { border-color: #fd6223; border-color: #2b6c5b; }
 @media (max-width: 767px) { .navbar-toggle { background: none; padding: 0px; margin: 0px; }
   .navbar-toggle .icon-bar { border-color: #2b6c5b; box-shadow: none; }
@@ -39,6 +42,30 @@ a:hover { color: #2b6c5b; }
 #welcome { height: 100vh; overflow: hidden; color: white; padding: 0px; background-image: url("../images/AJ-engagement-141.jpg"); background-repeat: no-repeat; background-position: center; background-size: cover; }
 #welcome h1 { position: fixed; display: inline; z-index: 10; bottom: 10%; left: 10%; text-shadow: 1px 1px 1px #2b6c5b; }
 #welcome .background { height: 100vh; background-repeat: no-repeat; background-position: center; background-size: cover; display: none; position: fixed; }
+
+/* info */
+#countdown { min-height: 500px; text-align: center; padding-top: 10px; }
+#countdown img { padding: 20px 0px; }
+#countdown #top-names { margin-top: 20px; text-align: center; font-family: 'Pillowbook'; font-size: 30pt; line-height: 40px; }
+#countdown #top-names #top-names-and { font-family: 'PillowbookOrnaments'; }
+#countdown #countdown-info-wrapper { margin: 20px auto; font-size: 14pt; }
+#countdown #countdown-info-wrapper #countdown-hrs-label, #countdown #countdown-info-wrapper #countdown-min-label, #countdown #countdown-info-wrapper #countdown-sec-label { display: none; }
+
+/* story */
+#story .img-wrapper { margin: 15px auto; }
+
+/* registry */
+#registry { text-align: center; }
+
+/* tidbits */
+#tidbits #tidbits-intro { text-align: center; font-style: italic; font-weight: 100; }
+#tidbits .img-wrapper { margin: 15px auto; }
+
+/* thanks */
+#thanks .img-wrapper { float: left; }
+#thanks p { font-weight: 200; margin-bottom: 20px; }
+#thanks p:last-of-type { margin-bottom: 0px; }
+#thanks p .name { font-weight: 600; }
 
 /* tidbits */
 #tidbits .tidbit-q, #tidbits .tidbit-a { padding-left: 22px; }

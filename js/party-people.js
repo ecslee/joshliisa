@@ -1,5 +1,8 @@
 // insert party people
 var bridesmaids = {
+    aliisa: {
+        img: 'aliisa'
+    },
     amalia: {
         img: 'amalia'
     },
@@ -24,6 +27,9 @@ var bridesmaids = {
 };
 
 var groomsmen = {
+    josh: {
+        img: 'josh'
+    },
     daniel: {
         img: 'daniel'
     },
@@ -51,14 +57,14 @@ var parties = {
     'bride-tribe': bridesmaids,
     'groom-crew': groomsmen
 };
-var styles = '';
+
 for (var party in parties) {
     for (var name in parties[party]) {
         var person = parties[party][name];
 
         var $person = $('<div/>', {
             'id': 'party-' + name,
-            'class': 'party-person col-xs-3',
+            'class': 'party-person',
         }).data('who', name);
 
         var imgPath = 'images/wedding-party/' + party + '/' + person.img + '.jpg';
@@ -79,7 +85,7 @@ for (var party in parties) {
             'class': 'party-title'
         }));
 
-        $('.party-rows').append($person);
+        $('.party-rows #' + party).append($person);
     }
 }
 

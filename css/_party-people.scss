@@ -1,5 +1,29 @@
 /* party people */
 
+#party {
+    text-align: center;
+}
+
+//.party-rows {
+//    @media (min-width: 768px) {
+//        width: 258px;
+//    }
+//
+//    @media (min-width: 992px) {
+//        width: 350px;
+//    }
+//    
+//    @media (min-width: 1200px) {
+//        width: 438px;
+//    }
+//}
+
+#bride-tribe, #groom-crew {
+    width: 49%;
+    display: inline-block;
+    float: left;
+}
+
 .party-name {
     font-size: 10pt;
     font-weight: 600;
@@ -32,7 +56,9 @@
 
 .party-rows {
     .party-person {
-        margin-bottom: 20px;
+        display: inline-block;
+        width: 44%;
+        margin: 3%;
         
         .party-name {
             margin-bottom: 10px;
@@ -44,7 +70,7 @@
         }
         
         .party-face {
-            border: 2px solid white;
+            border: 3px solid white;
             border-radius: 3px;
             
             &:hover {
@@ -55,7 +81,21 @@
 }
 
 .party-story {
+    height: 110px;
     font-weight: 100;
+    font-size: 12pt;
+    
+    @media (min-width: 768px) {
+        font-size: 10pt;
+    }
+    
+    @media (min-width: 992px) {
+        font-size: 11pt;
+    }
+    
+    @media (min-width: 1200px) {
+        font-size: 12pt;
+    }
 }
 
 .party-person {
@@ -67,8 +107,13 @@
 }
 
 #party-selected {
+    margin-bottom: 30px;
+    
     .party-face {
-        border: 2px solid $teal;
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        border: 4px solid $teal;
         border-radius: 50%;
         margin-bottom: 10px;
         
@@ -79,6 +124,36 @@
 }
 
 /* Bridesmaids */
+/* Aliisa */
+#party-aliisa {
+    .party-face {
+        background-image: url("../images/wedding-party/bride-tribe/aliisa.jpg");
+    }
+}
+
+#party-selected[data-who="aliisa"] {
+    .party-face {
+        background-image: url("../images/wedding-party/bride-tribe/aliisa.jpg");
+        &:hover {
+            background-image: url("../images/wedding-party/bride-tribe/aliisa2.jpg");
+        }
+    }
+    
+    .party-name::before {
+        content: "Aliisa Lee";
+        text-transform: uppercase;
+    }
+    
+    .party-title::before {
+        content: "bride";
+        text-transform: uppercase;
+    }
+    
+    .party-story::before {
+        content: "She's getting married!";
+    }
+}
+
 /* Amalia */
 #party-amalia {
     .party-face {
@@ -290,6 +365,36 @@
 }
 
 /* Groomsmen */
+/* Josh */
+#party-josh {
+    .party-face {
+        background-image: url("../images/wedding-party/groom-crew/josh.jpg");
+    }
+}
+
+#party-selected[data-who="josh"] {
+    .party-face {
+        background-image: url("../images/wedding-party/groom-crew/josh.jpg");
+        &:hover {
+            background-image: url("../images/wedding-party/groom-crew/josh2.jpg");
+        }
+    }
+    
+    .party-name::before {
+        content: "Joshua Bocarsly";
+        text-transform: uppercase;
+    }
+    
+    .party-title::before {
+        content: "groom";
+        text-transform: uppercase;
+    }
+    
+    .party-story::before {
+        content: "He's getting married!";
+    }
+}
+
 /* Daniel */
 #party-daniel {
     .party-face {

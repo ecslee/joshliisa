@@ -56,6 +56,8 @@ a:hover { color: #2b6c5b; }
 
 /* registry */
 #registry { text-align: center; }
+#registry .registry-img { display: inline-block; margin-top: 20px; margin-bottom: 20px; }
+#registry .registry-img img:hover { opacity: 0.5; transition: ease 0.3s; }
 
 /* tidbits */
 #tidbits #tidbits-intro { text-align: center; font-style: italic; font-weight: 100; }

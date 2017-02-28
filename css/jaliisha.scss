@@ -227,6 +227,17 @@ a:hover {
 
 #registry {
     text-align: center;
+    
+    .registry-img {
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+        img:hover {
+            opacity: 0.5;
+            transition: ease 0.3s;
+        }
+    }
 }
 
 /* tidbits */

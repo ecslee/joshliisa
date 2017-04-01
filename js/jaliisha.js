@@ -36,33 +36,46 @@ setCountdown();
 
 // scrolling picture
 var picMap = {
-    '#countdown': '141',
-    '#story': '110',
-    '#venue': '123',
-    '#party': '169',
-    '#registry': '184',
-    '#tidbits': '147'
+    'countdown': '141',
+    'story': '110',
+    'venue': '123',
+    'party': '169',
+    'registry': '184',
+    'tidbits': '147',
+    'thanks': '183'
 };
 
-var firstScroll = false;
-$('#wedding-menu').on('activate.bs.scrollspy', function (evt) {
-    if (!firstScroll) {
-        firstScroll = true;
-        return;
-    }
+var scrollTimeout,
+    section = $('.info-section')[0].id;
+function checkScroll(e) {
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(function () {
+        var newSection = $('.info-section')[0].id;
+        $('.info-section').each(function (i, el) {
+            if ($(el).offset().top -20 < $(document).scrollTop()) {
+                newSection = el.id;
+            }
+        });
+        
+        if (section !== newSection) {
+            $('#welcome .background.view').css('z-index', 4);
+            $('#welcome .background[data-section="' + newSection + '"]').css({
+                display: 'block',
+                'z-index': 2
+            });
+            $('#welcome .background.view').fadeOut('slow', function () {
+                $(this).removeClass('view');
+                $('#welcome .background').css('z-index', 1);
+                $('#welcome .background[data-section="' + newSection + '"]').addClass('view');
+                section = newSection;
+            });
+        }
+    }, 100);
+}
 
-    var section = $(evt.target).find('a[href]')[0].hash;
-    $('#welcome .background.view').css('z-index', 4);
-    $('#welcome .background[data-section="' + section + '"]').css({
-        display: 'block',
-        'z-index': 2
-    });
-    $('#welcome .background.view').fadeOut('slow', function () {
-        $(this).removeClass('view');
-        $('#welcome .background').css('z-index', 1);
-        $('#welcome .background[data-section="' + section + '"]').addClass('view');
-    });
-});
+$(document).on('scroll', checkScroll);
+$(window).on('resize', checkScroll);
+$(window).resize();
 
 for (var pic in picMap) {
     $('#welcome').append($('<div>', {
@@ -74,7 +87,7 @@ for (var pic in picMap) {
     }));
 }
 
-$('#welcome .background[data-section="#countdown"]').addClass('view').css('display', 'block');
+$('#welcome .background[data-section="countdown"]').addClass('view').css('display', 'block');
 
 // secret tiger pic
 var tigerO;

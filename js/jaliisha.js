@@ -12,7 +12,7 @@ $('#gallery .gallery-row img').click(function () {
 
 // June 25, 2017 @ 5:00pm EDT = UTC-04:00
 var june25UTC = new Date(2017, 5, 25);
-june25UTC.setUTCHours(12 + 4 + 4);
+june25UTC.setUTCHours(12 + 4);
 june25UTC.setUTCMinutes(00);
 
 function setCountdown() {

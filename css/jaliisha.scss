@@ -1,22 +1,23 @@
-$teal: rgb(43, 108, 91);
-$teal-trans: rgba(43, 108, 91, 0.8);
-$orange: rgb(253, 98, 35);
+$teal: rgb(10, 87, 123); // #0a577b
+$teal-light: #0E79AB; // #0a577b
+$teal-lightest: #4694B9; // #0a577b
+$teal-trans: rgba(10, 87, 123, 0.8);
+$orange: rgb(242, 116, 66); // #f27442
 
 /* main */
 
 body {
-    font-family: "BoosterNextFY", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight: 300;
+    font-family: "Vollkorn", "Georgia", TimesNewRoman, serif;
     color: #555;
     font-size: 12pt;
 }
 
 h1 {
-    font-family: "JandaElegantHandwriting";
+    font-family: "Pillowbook";
 }
 
 h2 {
-    font-family: "JandaElegantHandwriting";
+    font-family: "Pillowbook";
     color: $teal;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -25,7 +26,16 @@ h2 {
 }
 
 h3 {
-    margin-top: 10px;
+    font-family: "Pillowbook";
+    color: $teal-light;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.orange {
+    color: $orange;
 }
 
 a {
@@ -69,12 +79,12 @@ a:hover {
 
 /* first letter drop */
 .firstletter {
-    font-family: "JandaElegantHandwriting";
+    font-family: "Pillowbook";
     float: left;
-    color: $teal;
-    font-size: 64px;
-    line-height: 43px;
-    padding-top: 22px;
+    color: $orange;
+    font-size: 56px;
+    line-height: 44px;
+    padding-top: 16px;
     padding-right: 10px;
     /* padding-left: 3px; */
     font-weight: 300;
@@ -92,6 +102,7 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.8);
     
     > li > a:hover {
+        color: white;
         background-color: $teal;
         background-color: $teal-trans;
     }
@@ -196,10 +207,12 @@ a:hover {
         text-align: center;
         font-family: 'Pillowbook';
         font-size: 30pt;
-        line-height: 40px;
+        line-height: 50px;
+        color: $teal;
         
         #top-names-and {
-            font-family: 'PillowbookOrnaments';
+            color: $orange;
+            //font-family: 'PillowbookOrnaments';
         }
     }
     
@@ -220,6 +233,14 @@ a:hover {
 #story {
     .img-wrapper {
         margin: 15px auto;
+    }
+}
+
+/* venue */
+
+#venue {
+    .img-wrapper {
+        margin: 30px auto;
     }
 }
 
@@ -270,7 +291,7 @@ a:hover {
         }
         
         .name {
-            font-weight: 600;
+            font-style: italic;
         }
     }
 }

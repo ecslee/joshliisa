@@ -8,7 +8,7 @@
     
     .tidbit-q {
         font-size: 12pt;
-        font-weight: normal;
+        font-style: italic;
         margin-top: 30px;
         
         &:first-of-type {
@@ -17,8 +17,8 @@
         
         &::before {
             content: "Q";
-            font-size: 14pt;
-            font-family: "JandaElegantHandwriting";
+            font-size: 12pt;
+            font-family: "Pillowbook";
             color: $teal;
             position: relative;
             top: 2px;

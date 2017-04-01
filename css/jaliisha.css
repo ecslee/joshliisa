@@ -1,15 +1,17 @@
 /* main */
-body { font-family: "BoosterNextFY", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 300; color: #555; font-size: 12pt; }
+body { font-family: "Vollkorn", "Georgia", TimesNewRoman, serif; color: #555; font-size: 12pt; }
 
-h1 { font-family: "JandaElegantHandwriting"; }
+h1 { font-family: "Pillowbook"; }
 
-h2 { font-family: "JandaElegantHandwriting"; color: #2b6c5b; margin-top: 20px; margin-bottom: 20px; font-size: 24px; text-align: center; }
+h2 { font-family: "Pillowbook"; color: #0a577b; margin-top: 20px; margin-bottom: 20px; font-size: 24px; text-align: center; }
 
-h3 { margin-top: 10px; }
+h3 { font-family: "Pillowbook"; color: #0E79AB; margin-top: 20px; margin-bottom: 10px; font-size: 18px; text-align: center; }
 
-a { color: #fd6223; }
+.orange { color: #f27442; }
 
-a:hover { color: #2b6c5b; }
+a { color: #f27442; }
+
+a:hover { color: #0a577b; }
 
 .info-section { padding-top: 50px; }
 .info-section::after { display: block; content: ""; background: url("../images/DigitalGoldFoilGraphics/GoldFineMessyLine.png") no-repeat center; background-size: contain; min-height: 5px; margin: 50px auto 0px auto; }
@@ -19,40 +21,43 @@ a:hover { color: #2b6c5b; }
 .img-wrapper { padding: 0px; float: none; }
 
 /* first letter drop */
-.firstletter { font-family: "JandaElegantHandwriting"; float: left; color: #2b6c5b; font-size: 64px; line-height: 43px; padding-top: 22px; padding-right: 10px; /* padding-left: 3px; */ font-weight: 300; }
+.firstletter { font-family: "Pillowbook"; float: left; color: #f27442; font-size: 56px; line-height: 44px; padding-top: 16px; padding-right: 10px; /* padding-left: 3px; */ font-weight: 300; }
 
 /* nav */
 #wedding-menu.dropdown { position: fixed; top: 20px; left: 20px; z-index: 100; }
 
 .dropdown-menu { background-color: rgba(255, 255, 255, 0.8); }
-.dropdown-menu > li > a:hover { background-color: #2b6c5b; background-color: rgba(43, 108, 91, 0.8); }
-.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover { background-color: #2b6c5b; background-color: rgba(43, 108, 91, 0.8); }
+.dropdown-menu > li > a:hover { color: white; background-color: #0a577b; background-color: rgba(10, 87, 123, 0.8); }
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover { background-color: #0a577b; background-color: rgba(10, 87, 123, 0.8); }
 
 .dropdown.open #menu-label { display: inline-block; }
 
-.navbar-toggle { color: white; text-shadow: 1px 1px 1px #2b6c5b; display: block; }
+.navbar-toggle { color: white; text-shadow: 1px 1px 1px #0a577b; display: block; }
 .navbar-toggle .menu-bars { display: inline-block; margin-right: 10px; }
-.navbar-toggle .menu-bars .icon-bar { height: 2px; border-radius: 1px; border: 1px solid white; box-shadow: 1px 1px 1px #2b6c5b; }
-.navbar-toggle:hover .icon-bar { border-color: #fd6223; border-color: #2b6c5b; }
+.navbar-toggle .menu-bars .icon-bar { height: 2px; border-radius: 1px; border: 1px solid white; box-shadow: 1px 1px 1px #0a577b; }
+.navbar-toggle:hover .icon-bar { border-color: #f27442; border-color: #0a577b; }
 @media (max-width: 767px) { .navbar-toggle { background: none; padding: 0px; margin: 0px; }
-  .navbar-toggle .icon-bar { border-color: #2b6c5b; box-shadow: none; }
+  .navbar-toggle .icon-bar { border-color: #0a577b; box-shadow: none; }
   .navbar-toggle .menu-label { display: none; } }
 
 /* welcome section */
 #welcome { height: 100vh; overflow: hidden; color: white; padding: 0px; background-image: url("../images/AJ-engagement-141.jpg"); background-repeat: no-repeat; background-position: center; background-size: cover; }
-#welcome h1 { position: fixed; display: inline; z-index: 10; bottom: 10%; left: 10%; text-shadow: 1px 1px 1px #2b6c5b; }
+#welcome h1 { position: fixed; display: inline; z-index: 10; bottom: 10%; left: 10%; text-shadow: 1px 1px 1px #0a577b; }
 #welcome .background { height: 100vh; background-repeat: no-repeat; background-position: center; background-size: cover; display: none; position: fixed; }
 
 /* info */
 #countdown { min-height: 500px; text-align: center; padding-top: 10px; }
 #countdown img { padding: 20px 0px; }
-#countdown #top-names { margin-top: 20px; text-align: center; font-family: 'Pillowbook'; font-size: 30pt; line-height: 40px; }
-#countdown #top-names #top-names-and { font-family: 'PillowbookOrnaments'; }
+#countdown #top-names { margin-top: 20px; text-align: center; font-family: 'Pillowbook'; font-size: 30pt; line-height: 50px; color: #0a577b; }
+#countdown #top-names #top-names-and { color: #f27442; }
 #countdown #countdown-info-wrapper { margin: 20px auto; font-size: 14pt; }
 #countdown #countdown-info-wrapper #countdown-hrs-label, #countdown #countdown-info-wrapper #countdown-min-label, #countdown #countdown-info-wrapper #countdown-sec-label { display: none; }
 
 /* story */
 #story .img-wrapper { margin: 15px auto; }
+
+/* venue */
+#venue .img-wrapper { margin: 30px auto; }
 
 /* registry */
 #registry { text-align: center; }
@@ -67,15 +72,15 @@ a:hover { color: #2b6c5b; }
 #thanks .img-wrapper { float: left; }
 #thanks p { font-weight: 200; margin-bottom: 20px; }
 #thanks p:last-of-type { margin-bottom: 0px; }
-#thanks p .name { font-weight: 600; }
+#thanks p .name { font-style: italic; }
 
 /* tidbits */
 #tidbits .tidbit-q, #tidbits .tidbit-a { padding-left: 22px; }
-#tidbits .tidbit-q { font-size: 12pt; font-weight: normal; margin-top: 30px; }
+#tidbits .tidbit-q { font-size: 12pt; font-style: italic; margin-top: 30px; }
 #tidbits .tidbit-q:first-of-type { margin-top: 0px; }
-#tidbits .tidbit-q::before { content: "Q"; font-size: 14pt; font-family: "JandaElegantHandwriting"; color: #2b6c5b; position: relative; top: 2px; margin-left: -30px; margin-right: 12px; }
+#tidbits .tidbit-q::before { content: "Q"; font-size: 12pt; font-family: "Pillowbook"; color: #0a577b; position: relative; top: 2px; margin-left: -30px; margin-right: 12px; }
 #tidbits .tidbit-q:hover { cursor: pointer; }
-#tidbits .tidbit-q:hover::before { color: #fd6223; }
+#tidbits .tidbit-q:hover::before { color: #f27442; }
 #tidbits .tidbit-a { font-weight: 100; display: none; }
 #tidbits .tidbit-a.tidbit-show { display: block; }
 
@@ -97,18 +102,18 @@ a:hover { color: #2b6c5b; }
 .party-rows .party-person .party-name { margin-bottom: 10px; display: none; }
 .party-rows .party-person .party-title { display: none; }
 .party-rows .party-person .party-face { border: 3px solid white; border-radius: 3px; }
-.party-rows .party-person .party-face:hover { border-color: #fd6223; }
+.party-rows .party-person .party-face:hover { border-color: #f27442; }
 
 .party-story { height: 110px; font-weight: 100; font-size: 12pt; }
 @media (min-width: 768px) { .party-story { font-size: 10pt; } }
 @media (min-width: 992px) { .party-story { font-size: 11pt; } }
 @media (min-width: 1200px) { .party-story { font-size: 12pt; } }
 
-.party-person.active .party-face { border-color: #2b6c5b; }
+.party-person.active .party-face { border-color: #0a577b; }
 
 #party-selected { margin-bottom: 30px; }
-#party-selected .party-face { width: 200px; height: 200px; margin: auto; border: 4px solid #2b6c5b; border-radius: 50%; margin-bottom: 10px; }
-#party-selected .party-face:hover { border-color: #fd6223; }
+#party-selected .party-face { width: 200px; height: 200px; margin: auto; border: 4px solid #0a577b; border-radius: 50%; margin-bottom: 10px; }
+#party-selected .party-face:hover { border-color: #f27442; }
 
 /* Bridesmaids */
 /* Aliisa */
@@ -266,3 +271,12 @@ a:hover { color: #2b6c5b; }
 @font-face { font-family: 'PillowbookOrnaments'; src: url("fonts/pillowbook/pillowbook-ornaments/pillowbook-ornaments-webfont.eot"); src: url("fonts/pillowbook/pillowbook-ornaments/pillowbook-ornaments-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/pillowbook/pillowbook-ornaments/pillowbook-ornaments-webfont.woff") format("woff"), url("fonts/pillowbook/pillowbook-ornaments/pillowbook-ornaments-webfont.ttf") format("truetype"), url("fonts/pillowbook/pillowbook-ornaments/pillowbook-ornaments-webfont.svg#pillowbook_ornaments") format("svg"); font-weight: normal; font-style: normal; }
 /* SUNN */
 @font-face { font-family: 'SUNN'; src: url("fonts/sunn/sunn-webfont.woff") format("woff"), url("fonts/sunn/SUNN.otf") format("opentype"); font-weight: normal; font-style: normal; }
+/* This stylesheet generated by Transfonter (https://transfonter.org) on April 1, 2017 6:11 AM */
+@font-face { font-family: 'Vollkorn'; src: url("fonts/vollkorn/Vollkorn-Bold.eot"); src: url("fonts/vollkorn/Vollkorn-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/vollkorn/Vollkorn-Bold.woff") format("woff"), url("fonts/vollkorn/Vollkorn-Bold.ttf") format("truetype"); font-weight: bold; font-style: normal; }
+@font-face { font-family: 'Vollkorn'; src: url("fonts/vollkorn/Vollkorn-Semibold.eot"); src: url("fonts/vollkorn/Vollkorn-Semibold.eot?#iefix") format("embedded-opentype"), url("fonts/vollkorn/Vollkorn-Semibold.woff") format("woff"), url("fonts/vollkorn/Vollkorn-Semibold.ttf") format("truetype"); font-weight: 600; font-style: normal; }
+@font-face { font-family: 'Vollkorn'; src: url("fonts/vollkorn/Vollkorn-Regular.eot"); src: url("fonts/vollkorn/Vollkorn-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/vollkorn/Vollkorn-Regular.woff") format("woff"), url("fonts/vollkorn/Vollkorn-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Vollkorn'; src: url("fonts/vollkorn/Vollkorn-Italic.eot"); src: url("fonts/vollkorn/Vollkorn-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/vollkorn/Vollkorn-Italic.woff") format("woff"), url("fonts/vollkorn/Vollkorn-Italic.ttf") format("truetype"); font-weight: normal; font-style: italic; }
+@font-face { font-family: 'Vollkorn'; src: url("fonts/vollkorn/Vollkorn-BlackItalic.eot"); src: url("fonts/vollkorn/Vollkorn-BlackItalic.eot?#iefix") format("embedded-opentype"), url("fonts/vollkorn/Vollkorn-BlackItalic.woff") format("woff"), url("fonts/vollkorn/Vollkorn-BlackItalic.ttf") format("truetype"); font-weight: 900; font-style: italic; }
+@font-face { font-family: 'Vollkorn'; src: url("fonts/vollkorn/Vollkorn-Black.eot"); src: url("fonts/vollkorn/Vollkorn-Black.eot?#iefix") format("embedded-opentype"), url("fonts/vollkorn/Vollkorn-Black.woff") format("woff"), url("fonts/vollkorn/Vollkorn-Black.ttf") format("truetype"); font-weight: 900; font-style: normal; }
+@font-face { font-family: 'Vollkorn'; src: url("fonts/vollkorn/Vollkorn-SemiboldItalic.eot"); src: url("fonts/vollkorn/Vollkorn-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/vollkorn/Vollkorn-SemiboldItalic.woff") format("woff"), url("fonts/vollkorn/Vollkorn-SemiboldItalic.ttf") format("truetype"); font-weight: 500; font-style: italic; }
+@font-face { font-family: 'Vollkorn'; src: url("fonts/vollkorn/Vollkorn-BoldItalic.eot"); src: url("fonts/vollkorn/Vollkorn-BoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/vollkorn/Vollkorn-BoldItalic.woff") format("woff"), url("fonts/vollkorn/Vollkorn-BoldItalic.ttf") format("truetype"); font-weight: bold; font-style: italic; }

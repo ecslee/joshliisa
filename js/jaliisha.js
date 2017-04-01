@@ -19,7 +19,7 @@ function setCountdown() {
     var today = new Date();
 
     var daysLeft = (june25UTC - today) / (1000 * 60 * 60 * 24);
-    $('#countdown #countdown-day').text(Math.floor(daysLeft));
+    $('#countdown #countdown-day').text(Math.ceil(daysLeft));
 
     var hoursLeft = (daysLeft - Math.floor(daysLeft)) * 24;
     $('#countdown #countdown-hrs').text(Math.floor(hoursLeft));

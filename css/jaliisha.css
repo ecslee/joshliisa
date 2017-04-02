@@ -88,8 +88,6 @@ a:hover { color: #0E79AB; }
 /* party people */
 #party { text-align: center; }
 
-#bride-tribe, #groom-crew { width: 49%; display: inline-block; float: left; }
-
 .party-name { font-size: 10pt; font-weight: 600; margin: 10px 0px 0px; }
 .party-name .party-last-name { display: none; }
 @media (max-width: 767px) { .party-name .party-last-name { font-size: 9pt; } }
@@ -97,23 +95,27 @@ a:hover { color: #0E79AB; }
 .party-title { font-size: 9pt; font-weight: 300; }
 @media (max-width: 767px) { .party-title { font-size: 8pt; } }
 
-.party-face { height: 120px; background-repeat: no-repeat; background-position: center; background-size: cover; }
+.party-face { padding-bottom: 100%; background-repeat: no-repeat; background-position: center; background-size: cover; }
 
-.party-rows .party-person { display: inline-block; width: 44%; margin: 3%; }
+.party-rows { padding-right: 0px; }
+.party-rows #bride-tribe, .party-rows #groom-crew { padding: 0px; }
+.party-rows #bride-tribe { padding-right: 7px; }
+.party-rows #groom-crew { padding-left: 7px; }
+.party-rows .party-person { padding: 0px 0px 14px 0px; }
 .party-rows .party-person .party-name { margin-bottom: 10px; display: none; }
 .party-rows .party-person .party-title { display: none; }
 .party-rows .party-person .party-face { border: 3px solid white; border-radius: 3px; }
 .party-rows .party-person .party-face:hover { border-color: #f27442; }
 
-.party-story { height: 110px; font-weight: 200; font-size: 12pt; text-align: justify; }
+.party-story { height: 110px; font-weight: 200; font-size: 12pt; }
 @media (min-width: 768px) { .party-story { font-size: 10pt; } }
 @media (min-width: 992px) { .party-story { font-size: 11pt; } }
 @media (min-width: 1200px) { .party-story { font-size: 12pt; } }
 
 .party-person.active .party-face { border-color: #0a577b; }
 
-#party-selected { margin-bottom: 30px; }
-#party-selected .party-face { width: 200px; height: 200px; margin: auto; border: 4px solid #0a577b; border-radius: 50%; margin-bottom: 10px; }
+#party-selected { margin-bottom: 30px; padding: 0px; }
+#party-selected .party-face { margin: auto; border: 4px solid #0a577b; border-radius: 50%; margin-bottom: 10px; }
 #party-selected .party-face:hover { border-color: #f27442; }
 #party-selected .party-name, #party-selected .party-title { text-transform: uppercase; }
 

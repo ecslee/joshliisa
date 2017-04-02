@@ -118,16 +118,13 @@ for (var party in parties) {
 
         var $person = $('<div/>', {
             'id': 'party-' + name,
-            'class': 'party-person',
+            'class': 'party-person col-xs-12',
         }).data('who', name);
 
         var imgPath = 'images/wedding-party/' + party + '/' + person.img + '.jpg';
         var $face = $('<div/>', {
-            class: 'img-wrapper'
-        }).append($('<img/>', {
-            class: 'party-face',
-            src: imgPath
-        }));
+            class: 'party-face'
+        });
         
         $person.append($face);
 

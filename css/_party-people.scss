@@ -18,12 +18,6 @@
 //    }
 //}
 
-#bride-tribe, #groom-crew {
-    width: 49%;
-    display: inline-block;
-    float: left;
-}
-
 .party-name {
     font-size: 10pt;
     font-weight: 600;
@@ -48,17 +42,29 @@
 }
 
 .party-face {
-    height: 120px;
+    padding-bottom: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .party-rows {
+    padding-right: 0px;
+    
+    #bride-tribe, #groom-crew {
+        padding: 0px;
+    }
+    
+    #bride-tribe {
+        padding-right: 7px;
+    }
+    
+    #groom-crew {
+        padding-left: 7px;
+    }
+    
     .party-person {
-        display: inline-block;
-        width: 44%;
-        margin: 3%;
+        padding: 0px 0px 14px 0px;
         
         .party-name {
             margin-bottom: 10px;
@@ -84,7 +90,6 @@
     height: 110px;
     font-weight: 200;
     font-size: 12pt;
-    text-align: justify;
     
     @media (min-width: 768px) {
         font-size: 10pt;
@@ -109,10 +114,9 @@
 
 #party-selected {
     margin-bottom: 30px;
+    padding: 0px;
     
     .party-face {
-        width: 200px;
-        height: 200px;
         margin: auto;
         border: 4px solid $teal;
         border-radius: 50%;

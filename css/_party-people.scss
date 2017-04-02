@@ -82,8 +82,9 @@
 
 .party-story {
     height: 110px;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 12pt;
+    text-align: justify;
     
     @media (min-width: 768px) {
         font-size: 10pt;
@@ -121,6 +122,10 @@
             border-color: $orange;
         }
     }
+    
+    .party-name, .party-title {
+        text-transform: uppercase;
+    }
 }
 
 /* Bridesmaids */
@@ -138,20 +143,6 @@
             background-image: url("../images/wedding-party/bride-tribe/aliisa2.jpg");
         }
     }
-    
-    .party-name::before {
-        content: "Aliisa Lee";
-        text-transform: uppercase;
-    }
-    
-    .party-title::before {
-        content: "bride";
-        text-transform: uppercase;
-    }
-    
-    .party-story::before {
-        content: "She's getting married!";
-    }
 }
 
 /* Amalia */
@@ -167,20 +158,6 @@
         &:hover {
             background-image: url("../images/wedding-party/bride-tribe/amalia2.jpg");
         }
-    }
-    
-    .party-name::before {
-        content: "Amalia Lee";
-        text-transform: uppercase;
-    }
-    
-    .party-title::before {
-        content: "medium sister";
-        text-transform: uppercase;
-    }
-    
-    .party-story::before {
-        content: "Amalia is Aliisa's medium-sister. Everyday, she is good at singing, drawing cute tiny beavers, and doing science. Years ago, Aliisa and Amalia signed a contract that says they can never be mad at each other for more than five seconds.";
     }
 }
 
@@ -198,20 +175,6 @@
             //background-image: url("../images/wedding-party/bride-tribe/annika2.jpg");
         }
     }
-    
-    .party-name::before {
-        content: "Annika Lee";
-        text-transform: uppercase;
-    }
-    
-    .party-title::before {
-        content: "big sister";
-        text-transform: uppercase;
-    }
-    
-    .party-story::before {
-        content: "Annika is Aliisa's little big sister. She is amazing at drawing, speaking Japanese, and having information about everything. Annika is in charge of sending Aliisa art inspiration, interesting news, and pictures of other people's dogs.";
-    }
 }
 
 /* Avelina */
@@ -227,20 +190,6 @@
         &:hover {
             background-image: url("../images/wedding-party/bride-tribe/avi-yupi.jpg");
         }
-    }
-    
-    .party-name::before {
-        content: "Avelina Lee";
-        text-transform: uppercase;
-    }
-    
-    .party-title::before {
-        content: "little sister";
-        text-transform: uppercase;
-    }
-    
-    .party-story::before {
-        content: "Avelina (or Avi) is Aliisa's littlest sister. She is a world-class baker, hair-expert, linguist, and baby boss. Avi's love for Aliisa -- expressed by giving her food and cuddles -- is only surpassed by Avi's love for her cat, Yupi.";
     }
 }
 
@@ -258,20 +207,6 @@
             //background-image: url("../images/wedding-party/bride-tribe/emily2.jpg");
         }
     }
-    
-    .party-name::before {
-        content: "Emily Lee";
-        text-transform: uppercase;
-    }
-    
-    .party-title::before {
-        content: "sister-in-law, the first";
-        text-transform: uppercase;
-    }
-    
-    .party-story::before {
-        content: "Aliisa got a new sister when Emily married Anders in 2015! Emily is a coder, photographer, and perfect blend of creativity and organization. Emily is also a fun lifeline of sanity and Pinterest ideas when Aliisa desperately texts her for life help.";
-    }
 }
 
 /* Alissa */
@@ -287,20 +222,6 @@
         &:hover {
             //background-image: url("../images/wedding-party/bride-tribe/alissa2.jpg");
         }
-    }
-    
-    .party-name::before {
-        content: "Alissa Hopper";
-        text-transform: uppercase;
-    }
-    
-    .party-title::before {
-        content: "sister-in-love";
-        text-transform: uppercase;
-    }
-    
-    .party-story::before {
-        content: "Alissa is the sister Aliisa found at college! Alissa is a beautiful singer, a dog-whisperer, baby-whisperer. Aliisa and Alissa have oddly similar mannerisms and names, and we are bonded for life because of it.";
     }
 }
 
@@ -318,20 +239,6 @@
             //background-image: url("../images/wedding-party/bride-tribe/mir2.jpg");
         }
     }
-    
-    .party-name::before {
-        content: "Miriam Black";
-        text-transform: uppercase;
-    }
-    
-    .party-title::before {
-        content: "sister-in-law-to-be";
-        text-transform: uppercase;
-    }
-    
-    .party-story::before {
-        content: "Miriam is basically Aliisa's sister already. She Neuroscience, mice brains, crafts, Ellie. Mir-mom";
-    }
 }
 
 /* Naomi */
@@ -347,20 +254,6 @@
         &:hover {
             background-image: url("../images/wedding-party/bride-tribe/naomi2.jpg");
         }
-    }
-    
-    .party-name::before {
-        content: "Naomi Boyce";
-        text-transform: uppercase;
-    }
-    
-    .party-title::before {
-        content: "sister-in-law-to-be";
-        text-transform: uppercase;
-    }
-    
-    .party-story::before {
-        content: "Naomi social worker, sporty, James...";
     }
 }
 
@@ -379,20 +272,6 @@
             background-image: url("../images/wedding-party/groom-crew/josh2.jpg");
         }
     }
-    
-    .party-name::before {
-        content: "Joshua Bocarsly";
-        text-transform: uppercase;
-    }
-    
-    .party-title::before {
-        content: "groom";
-        text-transform: uppercase;
-    }
-    
-    .party-story::before {
-        content: "He's getting married!";
-    }
 }
 
 /* Daniel */
@@ -408,20 +287,6 @@
         &:hover {
             //background-image: url("../images/wedding-party/groom-crew/daniel2.jpg");
         }
-    }
-    
-    .party-name::before {
-        content: "Daniel Hwang";
-        text-transform: uppercase;
-    }
-    
-    .party-title::before {
-        content: "basically a brother";
-        text-transform: uppercase;
-    }
-    
-    .party-story::before {
-        content: "Music, cooking...";
     }
 }
 
@@ -439,20 +304,6 @@
             //background-image: url("../images/wedding-party/groom-crew/andrew2.jpg");
         }
     }
-    
-    .party-name::before {
-        content: "Andrew Black";
-        text-transform: uppercase;
-    }
-    
-    .party-title::before {
-        content: "brother-in-law";
-        text-transform: uppercase;
-    }
-    
-    .party-story::before {
-        content: "Cello, singing, politics, law school...";
-    }
 }
 
 /* Billy */
@@ -468,20 +319,6 @@
         &:hover {
             //background-image: url("../images/wedding-party/groom-crew/billy2.jpg");
         }
-    }
-    
-    .party-name::before {
-        content: "Billy Boyce";
-        text-transform: uppercase;
-    }
-    
-    .party-title::before {
-        content: "brother-in-law";
-        text-transform: uppercase;
-    }
-    
-    .party-story::before {
-        content: "Crew coach, eclectic music tastes...";
     }
 }
 
@@ -499,20 +336,6 @@
             //background-image: url("../images/wedding-party/groom-crew/robby2.jpg");
         }
     }
-    
-    .party-name::before {
-        content: "Robby Siliciano";
-        text-transform: uppercase;
-    }
-    
-    .party-title::before {
-        content: "friend";
-        text-transform: uppercase;
-    }
-    
-    .party-story::before {
-        content: "Economics, playing dark souls, beard... Insists josh is criminal justice major.";
-    }
 }
 
 /* Ham */
@@ -528,20 +351,6 @@
         &:hover {
             background-image: url("../images/wedding-party/groom-crew/ham2.jpg");
         }
-    }
-    
-    .party-name::before {
-        content: "Josh Hamilton";
-        text-transform: uppercase;
-    }
-    
-    .party-title::before {
-        content: "friend, fellow Josh";
-        text-transform: uppercase;
-    }
-    
-    .party-story::before {
-        content: "Counting fish, doctor, ROTC...";
     }
 }
 
@@ -559,20 +368,6 @@
             //background-image: url("../images/wedding-party/groom-crew/aleksi2.jpg");
         }
     }
-    
-    .party-name::before {
-        content: "Aleksi Lee";
-        text-transform: uppercase;
-    }
-    
-    .party-title::before {
-        content: "brother-in-law-to-be";
-        text-transform: uppercase;
-    }
-    
-    .party-story::before {
-        content: "Neuroscience...";
-    }
 }
 
 /* Anders */
@@ -588,20 +383,6 @@
         &:hover {
             //background-image: url("../images/wedding-party/groom-crew/anders2.jpg");
         }
-    }
-    
-    .party-name::before {
-        content: "Anders Lee";
-        text-transform: uppercase;
-    }
-    
-    .party-title::before {
-        content: "brother-in-law-to-be";
-        text-transform: uppercase;
-    }
-    
-    .party-story::before {
-        content: "Guitar, electrical engineering, cooking...";
     }
 }
 

@@ -91,7 +91,7 @@ $('#welcome .background[data-section="countdown"]').addClass('view').css('displa
 
 // secret tiger pic
 var tigerO;
-$('#our-story-o').mousedown(function () {
+$('#story p:first-of-type').mousedown(function () {
     tigerO = setTimeout(function () {
         $('#our-story-pic')[0].src = 'images/sketches/save-the-date-tigers.jpg';
     }, 3000);

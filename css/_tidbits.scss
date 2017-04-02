@@ -1,14 +1,23 @@
 /* tidbits */
 
 #tidbits {
+    #tidbits-intro {
+        text-align: center;
+        font-style: italic;
+        font-weight: 200;
+    }
+    
+    .img-wrapper {
+        margin: 15px auto;
+    }
+    
     .tidbit-q,
     .tidbit-a {
         padding-left: 22px;
     }
     
     .tidbit-q {
-        font-size: 12pt;
-        font-style: italic;
+        font-weight: 500;
         margin-top: 30px;
         
         &:first-of-type {
@@ -36,7 +45,7 @@
     }
     
     .tidbit-a {
-        font-weight: 100;
+        text-align: justify;
         display: none;
         
         &.tidbit-show {

@@ -7,9 +7,10 @@ $orange: rgb(242, 116, 66); // #f27442
 /* main */
 
 body {
-    font-family: "Vollkorn", "Georgia", TimesNewRoman, serif;
+    font-family: "Andes", Helvetica, sans-serif;
     color: #555;
     font-size: 12pt;
+    font-weight: 300;
 }
 
 h1 {
@@ -43,7 +44,7 @@ a {
 }
 
 a:hover {
-    color: $teal;
+    color: $teal-light;
 }
 
 .info-section {
@@ -77,20 +78,8 @@ a:hover {
     float: none;
 }
 
-/* first letter drop */
-.firstletter {
-    font-family: "Pillowbook";
-    float: left;
-    color: $orange;
-    font-size: 56px;
-    line-height: 44px;
-    padding-top: 16px;
-    padding-right: 10px;
-    /* padding-left: 3px; */
-    font-weight: 300;
-}
-
 /* nav */
+
 #wedding-menu.dropdown {
     position: fixed;
     top: 20px;
@@ -101,10 +90,14 @@ a:hover {
 .dropdown-menu {
     background-color: rgba(255, 255, 255, 0.8);
     
-    > li > a:hover {
-        color: white;
-        background-color: $teal;
-        background-color: $teal-trans;
+    > li > a {
+        font-weight: 300;
+        
+        &:hover {
+            color: white;
+            background-color: $teal;
+            background-color: $teal-trans;
+        }
     }
     
     > .active > a,
@@ -181,13 +174,15 @@ a:hover {
     
     .background {
         height: 100vh;
-//        width: 100%;
-//        background-image: url("../images/AJ-engagement-141.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         display: none;
         position: fixed;
+        
+        &.view {
+            display: block !important;
+        }
     }
 }
 
@@ -212,7 +207,6 @@ a:hover {
         
         #top-names-and {
             color: $orange;
-            //font-family: 'PillowbookOrnaments';
         }
     }
     
@@ -234,6 +228,24 @@ a:hover {
     .img-wrapper {
         margin: 15px auto;
     }
+    
+    p {
+        text-align: justify;
+        
+        &:first-of-type {
+            &::first-letter {
+                font-family: "Pillowbook";
+                float: left;
+                color: $orange;
+                font-size: 56px;
+                line-height: 44px;
+                padding-top: 16px;
+                padding-right: 10px;
+            }
+        }
+    }
+    
+    
 }
 
 /* venue */
@@ -241,6 +253,16 @@ a:hover {
 #venue {
     .img-wrapper {
         margin: 30px auto;
+    }
+    
+    p {
+        b {
+            font-weight: bolder;
+        }
+        
+        &:first-of-type {
+            text-align: justify;
+        }
     }
 }
 
@@ -261,20 +283,6 @@ a:hover {
     }
 }
 
-/* tidbits */
-
-#tidbits {
-    #tidbits-intro {
-        text-align: center;
-        font-style: italic;
-        font-weight: 100;
-    }
-    
-    .img-wrapper {
-        margin: 15px auto;
-    }
-}
-
 /* thanks */
 
 #thanks {
@@ -291,7 +299,8 @@ a:hover {
         }
         
         .name {
-            font-style: italic;
+            font-weight: bolder;
+            color: $teal-light;
         }
     }
 }

@@ -1,5 +1,5 @@
 /* main */
-body { font-family: "Vollkorn", "Georgia", TimesNewRoman, serif; color: #555; font-size: 12pt; }
+body { font-family: "Andes", Helvetica, sans-serif; color: #555; font-size: 12pt; font-weight: 300; }
 
 h1 { font-family: "Pillowbook"; }
 
@@ -11,7 +11,7 @@ h3 { font-family: "Pillowbook"; color: #0E79AB; margin-top: 20px; margin-bottom:
 
 a { color: #f27442; }
 
-a:hover { color: #0a577b; }
+a:hover { color: #0E79AB; }
 
 .info-section { padding-top: 50px; }
 .info-section::after { display: block; content: ""; background: url("../images/DigitalGoldFoilGraphics/GoldFineMessyLine.png") no-repeat center; background-size: contain; min-height: 5px; margin: 50px auto 0px auto; }
@@ -20,13 +20,11 @@ a:hover { color: #0a577b; }
 
 .img-wrapper { padding: 0px; float: none; }
 
-/* first letter drop */
-.firstletter { font-family: "Pillowbook"; float: left; color: #f27442; font-size: 56px; line-height: 44px; padding-top: 16px; padding-right: 10px; /* padding-left: 3px; */ font-weight: 300; }
-
 /* nav */
 #wedding-menu.dropdown { position: fixed; top: 20px; left: 20px; z-index: 100; }
 
 .dropdown-menu { background-color: rgba(255, 255, 255, 0.8); }
+.dropdown-menu > li > a { font-weight: 300; }
 .dropdown-menu > li > a:hover { color: white; background-color: #0a577b; background-color: rgba(10, 87, 123, 0.8); }
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover { background-color: #0a577b; background-color: rgba(10, 87, 123, 0.8); }
 
@@ -44,6 +42,7 @@ a:hover { color: #0a577b; }
 #welcome { height: 100vh; overflow: hidden; color: white; padding: 0px; background-image: url("../images/AJ-engagement-141.jpg"); background-repeat: no-repeat; background-position: center; background-size: cover; }
 #welcome h1 { position: fixed; display: inline; z-index: 10; bottom: 10%; left: 10%; text-shadow: 1px 1px 1px #0a577b; }
 #welcome .background { height: 100vh; background-repeat: no-repeat; background-position: center; background-size: cover; display: none; position: fixed; }
+#welcome .background.view { display: block !important; }
 
 /* info */
 #countdown { min-height: 500px; text-align: center; padding-top: 10px; }
@@ -55,33 +54,35 @@ a:hover { color: #0a577b; }
 
 /* story */
 #story .img-wrapper { margin: 15px auto; }
+#story p { text-align: justify; }
+#story p:first-of-type::first-letter { font-family: "Pillowbook"; float: left; color: #f27442; font-size: 56px; line-height: 44px; padding-top: 16px; padding-right: 10px; }
 
 /* venue */
 #venue .img-wrapper { margin: 30px auto; }
+#venue p b { font-weight: bolder; }
+#venue p:first-of-type { text-align: justify; }
 
 /* registry */
 #registry { text-align: center; }
 #registry .registry-img { display: inline-block; margin-top: 20px; margin-bottom: 20px; }
 #registry .registry-img img:hover { opacity: 0.5; transition: ease 0.3s; }
 
-/* tidbits */
-#tidbits #tidbits-intro { text-align: center; font-style: italic; font-weight: 100; }
-#tidbits .img-wrapper { margin: 15px auto; }
-
 /* thanks */
 #thanks .img-wrapper { float: left; }
 #thanks p { font-weight: 200; margin-bottom: 20px; }
 #thanks p:last-of-type { margin-bottom: 0px; }
-#thanks p .name { font-style: italic; }
+#thanks p .name { font-weight: bolder; color: #0E79AB; }
 
 /* tidbits */
+#tidbits #tidbits-intro { text-align: center; font-style: italic; font-weight: 200; }
+#tidbits .img-wrapper { margin: 15px auto; }
 #tidbits .tidbit-q, #tidbits .tidbit-a { padding-left: 22px; }
-#tidbits .tidbit-q { font-size: 12pt; font-style: italic; margin-top: 30px; }
+#tidbits .tidbit-q { font-weight: 500; margin-top: 30px; }
 #tidbits .tidbit-q:first-of-type { margin-top: 0px; }
 #tidbits .tidbit-q::before { content: "Q"; font-size: 12pt; font-family: "Pillowbook"; color: #0a577b; position: relative; top: 2px; margin-left: -30px; margin-right: 12px; }
 #tidbits .tidbit-q:hover { cursor: pointer; }
 #tidbits .tidbit-q:hover::before { color: #f27442; }
-#tidbits .tidbit-a { font-weight: 100; display: none; }
+#tidbits .tidbit-a { text-align: justify; display: none; }
 #tidbits .tidbit-a.tidbit-show { display: block; }
 
 /* party people */
@@ -252,31 +253,17 @@ a:hover { color: #0a577b; }
 #party-selected[data-who="anders"] .party-story::before { content: "Guitar, electrical engineering, cooking..."; }
 
 /* fonts */
-/* BoosterNextFY */
-@font-face { font-family: 'BoosterNextFY'; src: url("fonts/booster-next/Black/BoosterNextFY-Black.eot"); src: url("fonts/booster-next/Black/BoosterNextFY-Black.eot?#iefix") format("embedded-opentype"), url("fonts/booster-next/Black/BoosterNextFY-Black.woff") format("woff"), url("fonts/booster-next/Black/BoosterNextFY-Black.ttf") format("truetype"), url("fonts/booster-next/Black/BoosterNextFY-Black.svg#Booster Next FY Black") format("svg"); font-weight: 900; font-style: normal; }
-@font-face { font-family: 'BoosterNextFY'; src: url("fonts/booster-next/Bold/BoosterNextFY-Bold.eot"); src: url("fonts/booster-next/Bold/BoosterNextFY-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/booster-next/Bold/BoosterNextFY-Bold.woff") format("woff"), url("fonts/booster-next/Bold/BoosterNextFY-Bold.ttf") format("truetype"), url("fonts/booster-next/Bold/BoosterNextFY-Bold.svg#Booster Next FY Bold") format("svg"); font-weight: bold; font-style: normal; }
-@font-face { font-family: 'BoosterNextFY'; src: url("fonts/booster-next/Medium/BoosterNextFY-Medium.eot"); src: url("fonts/booster-next/Medium/BoosterNextFY-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/booster-next/Medium/BoosterNextFY-Medium.woff") format("woff"), url("fonts/booster-next/Medium/BoosterNextFY-Medium.ttf") format("truetype"), url("fonts/booster-next/Medium/BoosterNextFY-Medium.svg#Booster Next FY Medium") format("svg"); font-weight: 600; font-style: normal; }
-@font-face { font-family: 'BoosterNextFY'; src: url("fonts/booster-next/Regular/BoosterNextFY-Regular.eot"); src: url("fonts/booster-next/Regular/BoosterNextFY-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/booster-next/Regular/BoosterNextFY-Regular.woff") format("woff"), url("fonts/booster-next/Regular/BoosterNextFY-Regular.ttf") format("truetype"), url("fonts/booster-next/Regular/BoosterNextFY-Regular.svg#Booster Next FY Regular") format("svg"); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'BoosterNextFY'; src: url("fonts/booster-next/Light/BoosterNextFY-Light.eot"); src: url("fonts/booster-next/Light/BoosterNextFY-Light.eot?#iefix") format("embedded-opentype"), url("fonts/booster-next/Light/BoosterNextFY-Light.woff") format("woff"), url("fonts/booster-next/Light/BoosterNextFY-Light.ttf") format("truetype"), url("fonts/booster-next/Light/BoosterNextFY-Light.svg#Booster Next FY Light") format("svg"); font-weight: 300; font-style: normal; }
-@font-face { font-family: 'BoosterNextFY'; src: url("fonts/booster-next/Thin/BoosterNextFY-Thin.eot"); src: url("fonts/booster-next/Thin/BoosterNextFY-Thin.eot?#iefix") format("embedded-opentype"), url("fonts/booster-next/Thin/BoosterNextFY-Thin.woff") format("woff"), url("fonts/booster-next/Thin/BoosterNextFY-Thin.ttf") format("truetype"), url("fonts/booster-next/Thin/BoosterNextFY-Thin.svg#Booster Next FY Thin") format("svg"); font-weight: 100; font-style: normal; }
-/* Champagne and Limousines */
-@font-face { font-family: 'Champagne&Limousines'; src: url("fonts/champagne-limousines/champagnelimousines-webfont.eot"); src: url("fonts/champagne-limousines/champagnelimousines-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/champagne-limousines/champagnelimousines-webfont.woff") format("woff"), url("fonts/champagne-limousines/champagnelimousines-webfont.ttf") format("truetype"), url("fonts/champagne-limousines/champagnelimousines-webfont.svg#champagne__limousinesregular") format("svg"); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'Champagne&LimousinesBold'; src: url("fonts/champagne-limousines/champagnelimousinesbold-webfont.eot"); src: url("fonts/champagne-limousines/champagnelimousinesbold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/champagne-limousines/champagnelimousinesbold-webfont.woff") format("woff"), url("fonts/champagne-limousines/champagnelimousinesbold-webfont.ttf") format("truetype"), url("fonts/champagne-limousines/champagnelimousinesbold-webfont.svg#champagne__limousinesbold") format("svg"); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'Champagne&LimousinesItalic'; src: url("fonts/champagne-limousines/champagnelimousinesitalic-webfont.eot"); src: url("fonts/champagne-limousines/champagnelimousinesitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/champagne-limousines/champagnelimousinesitalic-webfont.woff") format("woff"), url("fonts/champagne-limousines/champagnelimousinesitalic-webfont.ttf") format("truetype"), url("fonts/champagne-limousines/champagnelimousinesitalic-webfont.svg#champagne__limousinesitalic") format("svg"); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'Champagne&LimousinesBoldItalic'; src: url("fonts/champagne-limousines/champagnelimousinesbolditalic-webfont.eot"); src: url("fonts/fonts/champagne-limousines/champagnelimousinesbolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/champagne-limousines/champagnelimousinesbolditalic-webfont.woff") format("woff"), url("fonts/fonts/champagne-limousines/champagnelimousinesbolditalic-webfont.ttf") format("truetype"), url("fonts/champagne-limousines/champagnelimousinesbolditalic-webfont.svg#champagne__limousinesBdIt") format("svg"); font-weight: normal; font-style: normal; }
-/* Janda Elegant Handwriting */
-@font-face { font-family: 'JandaElegantHandwriting'; src: url("fonts/janda-elegant/jandaeleganthandwriting-webfont.woff") format("woff"), url("fonts/janda-elegant/JandaElegantHandwriting.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 /* Pillowbook */
 @font-face { font-family: 'Pillowbook'; src: url("fonts/pillowbook/pillowbook-regular/pillowbook-regular-webfont.eot"); src: url("fonts/pillowbook/pillowbook-regular/pillowbook-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/pillowbook/pillowbook-regular/pillowbook-regular-webfont.woff") format("woff"), url("fonts/pillowbook/pillowbook-regular/pillowbook-regular-webfont.ttf") format("truetype"), url("fonts/pillowbook/pillowbook-regular/pillowbook-regular-webfont.svg#pillowbookregular") format("svg"); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'PillowbookOrnaments'; src: url("fonts/pillowbook/pillowbook-ornaments/pillowbook-ornaments-webfont.eot"); src: url("fonts/pillowbook/pillowbook-ornaments/pillowbook-ornaments-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/pillowbook/pillowbook-ornaments/pillowbook-ornaments-webfont.woff") format("woff"), url("fonts/pillowbook/pillowbook-ornaments/pillowbook-ornaments-webfont.ttf") format("truetype"), url("fonts/pillowbook/pillowbook-ornaments/pillowbook-ornaments-webfont.svg#pillowbook_ornaments") format("svg"); font-weight: normal; font-style: normal; }
-/* SUNN */
-@font-face { font-family: 'SUNN'; src: url("fonts/sunn/sunn-webfont.woff") format("woff"), url("fonts/sunn/SUNN.otf") format("opentype"); font-weight: normal; font-style: normal; }
-/* This stylesheet generated by Transfonter (https://transfonter.org) on April 1, 2017 6:11 AM */
-@font-face { font-family: 'Vollkorn'; src: url("fonts/vollkorn/Vollkorn-Bold.eot"); src: url("fonts/vollkorn/Vollkorn-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/vollkorn/Vollkorn-Bold.woff") format("woff"), url("fonts/vollkorn/Vollkorn-Bold.ttf") format("truetype"); font-weight: bold; font-style: normal; }
-@font-face { font-family: 'Vollkorn'; src: url("fonts/vollkorn/Vollkorn-Semibold.eot"); src: url("fonts/vollkorn/Vollkorn-Semibold.eot?#iefix") format("embedded-opentype"), url("fonts/vollkorn/Vollkorn-Semibold.woff") format("woff"), url("fonts/vollkorn/Vollkorn-Semibold.ttf") format("truetype"); font-weight: 600; font-style: normal; }
-@font-face { font-family: 'Vollkorn'; src: url("fonts/vollkorn/Vollkorn-Regular.eot"); src: url("fonts/vollkorn/Vollkorn-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/vollkorn/Vollkorn-Regular.woff") format("woff"), url("fonts/vollkorn/Vollkorn-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'Vollkorn'; src: url("fonts/vollkorn/Vollkorn-Italic.eot"); src: url("fonts/vollkorn/Vollkorn-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/vollkorn/Vollkorn-Italic.woff") format("woff"), url("fonts/vollkorn/Vollkorn-Italic.ttf") format("truetype"); font-weight: normal; font-style: italic; }
-@font-face { font-family: 'Vollkorn'; src: url("fonts/vollkorn/Vollkorn-BlackItalic.eot"); src: url("fonts/vollkorn/Vollkorn-BlackItalic.eot?#iefix") format("embedded-opentype"), url("fonts/vollkorn/Vollkorn-BlackItalic.woff") format("woff"), url("fonts/vollkorn/Vollkorn-BlackItalic.ttf") format("truetype"); font-weight: 900; font-style: italic; }
-@font-face { font-family: 'Vollkorn'; src: url("fonts/vollkorn/Vollkorn-Black.eot"); src: url("fonts/vollkorn/Vollkorn-Black.eot?#iefix") format("embedded-opentype"), url("fonts/vollkorn/Vollkorn-Black.woff") format("woff"), url("fonts/vollkorn/Vollkorn-Black.ttf") format("truetype"); font-weight: 900; font-style: normal; }
-@font-face { font-family: 'Vollkorn'; src: url("fonts/vollkorn/Vollkorn-SemiboldItalic.eot"); src: url("fonts/vollkorn/Vollkorn-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/vollkorn/Vollkorn-SemiboldItalic.woff") format("woff"), url("fonts/vollkorn/Vollkorn-SemiboldItalic.ttf") format("truetype"); font-weight: 500; font-style: italic; }
-@font-face { font-family: 'Vollkorn'; src: url("fonts/vollkorn/Vollkorn-BoldItalic.eot"); src: url("fonts/vollkorn/Vollkorn-BoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/vollkorn/Vollkorn-BoldItalic.woff") format("woff"), url("fonts/vollkorn/Vollkorn-BoldItalic.ttf") format("truetype"); font-weight: bold; font-style: italic; }
+/* Andes */
+@font-face { font-family: 'Andes'; src: url("fonts/andes/Andes-UltraLight-webfont.eot"); src: url("fonts/andes/Andes-UltraLight-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/andes/Andes-UltraLight-webfont.woff2") format("woff2"), url("fonts/andes/Andes-UltraLight-webfont.woff") format("woff"), url("fonts/andes/Andes-UltraLight-webfont.ttf") format("truetype"), url("fonts/andes/Andes-UltraLight-webfont.svg") format("svg"); font-weight: 100; font-style: normal; }
+@font-face { font-family: 'Andes'; src: url("fonts/andes/Andes-ExtraLight-webfont.eot"); src: url("fonts/andes/Andes-ExtraLight-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/andes/Andes-ExtraLight-webfont.woff2") format("woff2"), url("fonts/andes/Andes-ExtraLight-webfont.woff") format("woff"), url("fonts/andes/Andes-ExtraLight-webfont.ttf") format("truetype"), url("fonts/andes/Andes-ExtraLight-webfont.svg") format("svg"); font-weight: 200; font-style: normal; }
+@font-face { font-family: 'Andes'; src: url("fonts/andes/Andes-Light-webfont.eot"); src: url("fonts/andes/Andes-Light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/andes/Andes-Light-webfont.woff2") format("woff2"), url("fonts/andes/Andes-Light-webfont.woff") format("woff"), url("fonts/andes/Andes-Light-webfont.ttf") format("truetype"), url("fonts/andes/Andes-Light-webfont.svg") format("svg"); font-weight: 300; font-style: normal; }
+@font-face { font-family: 'Andes'; src: url("fonts/andes/Andes-Regular-webfont.eot"); src: url("fonts/andes/Andes-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/andes/Andes-Regular-webfont.woff2") format("woff2"), url("fonts/andes/Andes-Regular-webfont.woff") format("woff"), url("fonts/andes/Andes-Regular-webfont.ttf") format("truetype"), url("fonts/andes/Andes-Regular-webfont.svg") format("svg"); font-weight: 400; font-style: normal; }
+@font-face { font-family: 'Andes'; src: url("fonts/andes/Andes-Medium-webfont.eot"); src: url("fonts/andes/Andes-Medium-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/andes/Andes-Medium-webfont.woff2") format("woff2"), url("fonts/andes/Andes-Medium-webfont.woff") format("woff"), url("fonts/andes/Andes-Medium-webfont.ttf") format("truetype"), url("fonts/andes/Andes-Medium-webfont.svg") format("svg"); font-weight: 500; font-style: normal; }
+@font-face { font-family: 'Andes'; src: url("fonts/andes/Andes-SemiBold-webfont.eot"); src: url("fonts/andes/Andes-SemiBold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/andes/Andes-SemiBold-webfont.woff2") format("woff2"), url("fonts/andes/Andes-SemiBold-webfont.woff") format("woff"), url("fonts/andes/Andes-SemiBold-webfont.ttf") format("truetype"), url("fonts/andes/Andes-SemiBold-webfont.svg") format("svg"); font-weight: 600; font-style: normal; }
+@font-face { font-family: 'Andes'; src: url("fonts/andes/Andes-Bold-webfont.eot"); src: url("fonts/andes/Andes-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/andes/Andes-Bold-webfont.woff2") format("woff2"), url("fonts/andes/Andes-Bold-webfont.woff") format("woff"), url("fonts/andes/Andes-Bold-webfont.ttf") format("truetype"), url("fonts/andes/Andes-Bold-webfont.svg") format("svg"); font-weight: 700; font-style: normal; }
+@font-face { font-family: 'Andes'; src: url("fonts/andes/Andes-ExtraBold-webfont.eot"); src: url("fonts/andes/Andes-ExtraBold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/andes/Andes-ExtraBold-webfont.woff2") format("woff2"), url("fonts/andes/Andes-ExtraBold-webfont.woff") format("woff"), url("fonts/andes/Andes-ExtraBold-webfont.ttf") format("truetype"), url("fonts/andes/Andes-ExtraBold-webfont.svg") format("svg"); font-weight: 800; font-style: normal; }
+@font-face { font-family: 'Andes'; src: url("fonts/andes/Andes-Black-webfont.eot"); src: url("fonts/andes/Andes-Black-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/andes/Andes-Black-webfont.woff2") format("woff2"), url("fonts/andes/Andes-Black-webfont.woff") format("woff"), url("fonts/andes/Andes-Black-webfont.ttf") format("truetype"), url("fonts/andes/Andes-Black-webfont.svg") format("svg"); font-weight: 900; font-style: normal; }
+@font-face { font-family: 'Andes-book'; src: url("fonts/andes/Andes-Book-webfont.eot"); src: url("fonts/andes/Andes-Book-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/andes/Andes-Book-webfont.woff2") format("woff2"), url("fonts/andes/Andes-Book-webfont.woff") format("woff"), url("fonts/andes/Andes-Book-webfont.ttf") format("truetype"), url("fonts/andes/Andes-Book-webfont.svg") format("svg"); font-weight: normal; font-style: normal; }

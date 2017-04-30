@@ -1,55 +1,93 @@
 /* tidbits */
 
-#tidbits {
-    #tidbits-intro {
-        text-align: center;
-        font-style: italic;
-        font-weight: 200;
-    }
+.tidbits-intro {
+    text-align: center;
+    font-style: italic;
+    font-weight: 200;
     
+    .tidbits-intro-click {
+        display: inline-block;
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+}
+
+.tidbit-q,
+.tidbit-a {
+    padding-left: 22px;
+}
+
+.tidbit-q {
+    font-weight: 500;
+    margin-top: 30px;
+
+    &:first-of-type {
+        margin-top: 0px;
+    }
+
+    &::before {
+        content: "";
+        font-size: 12pt;
+        font-family: "Pillowbook";
+        color: $teal;
+        position: relative;
+        top: 2px;
+        margin-left: -30px;
+        margin-right: 12px;
+    }
+
+    &:hover {
+        cursor: pointer;
+        color: $teal-light;
+
+        &::before {
+            color: $orange;
+        }
+    }
+}
+
+.tidbit-a {
+    text-align: justify;
+    display: none;
+
+    &.tidbit-show {
+        display: block;
+    }
+}
+
+#tidbits {
     .img-wrapper {
         margin: 15px auto;
     }
     
-    .tidbit-q,
-    .tidbit-a {
-        padding-left: 22px;
-    }
-    
     .tidbit-q {
-        font-weight: 500;
-        margin-top: 30px;
-        
-        &:first-of-type {
-            margin-top: 0px;
-        }
-        
         &::before {
             content: "Q";
-            font-size: 12pt;
-            font-family: "Pillowbook";
-            color: $teal;
-            position: relative;
-            top: 2px;
-            margin-left: -30px;
-            margin-right: 12px;
         }
         
-        &:hover {
-            cursor: pointer;
-            
+        &.open {
             &::before {
-                color: $orange;
+                color: $teal-lightest;
             }
         }
     }
-    
-    .tidbit-a {
-        text-align: justify;
-        display: none;
+}
+
+#todo {
+    .tidbit-q {
+        &::before {
+            content: ">";
+            font-family: sans-serif;
+            top: 0;
+        }
         
-        &.tidbit-show {
-            display: block;
+        &.open {
+            &::before {
+                color: $teal-lightest;
+                content: "v";
+                margin-left: -29px;
+            }
         }
     }
 }

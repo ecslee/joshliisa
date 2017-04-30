@@ -74,16 +74,27 @@ a:hover { color: #0E79AB; }
 #thanks p .name { font-weight: bolder; color: #0E79AB; }
 
 /* tidbits */
-#tidbits #tidbits-intro { text-align: center; font-style: italic; font-weight: 200; }
+.tidbits-intro { text-align: center; font-style: italic; font-weight: 200; }
+.tidbits-intro .tidbits-intro-click { display: inline-block; }
+@media (min-width: 768px) { .tidbits-intro .tidbits-intro-click { display: none; } }
+
+.tidbit-q, .tidbit-a { padding-left: 22px; }
+
+.tidbit-q { font-weight: 500; margin-top: 30px; }
+.tidbit-q:first-of-type { margin-top: 0px; }
+.tidbit-q::before { content: ""; font-size: 12pt; font-family: "Pillowbook"; color: #0a577b; position: relative; top: 2px; margin-left: -30px; margin-right: 12px; }
+.tidbit-q:hover { cursor: pointer; color: #0E79AB; }
+.tidbit-q:hover::before { color: #f27442; }
+
+.tidbit-a { text-align: justify; display: none; }
+.tidbit-a.tidbit-show { display: block; }
+
 #tidbits .img-wrapper { margin: 15px auto; }
-#tidbits .tidbit-q, #tidbits .tidbit-a { padding-left: 22px; }
-#tidbits .tidbit-q { font-weight: 500; margin-top: 30px; }
-#tidbits .tidbit-q:first-of-type { margin-top: 0px; }
-#tidbits .tidbit-q::before { content: "Q"; font-size: 12pt; font-family: "Pillowbook"; color: #0a577b; position: relative; top: 2px; margin-left: -30px; margin-right: 12px; }
-#tidbits .tidbit-q:hover { cursor: pointer; }
-#tidbits .tidbit-q:hover::before { color: #f27442; }
-#tidbits .tidbit-a { text-align: justify; display: none; }
-#tidbits .tidbit-a.tidbit-show { display: block; }
+#tidbits .tidbit-q::before { content: "Q"; }
+#tidbits .tidbit-q.open::before { color: #4694B9; }
+
+#todo .tidbit-q::before { content: ">"; font-family: sans-serif; top: 0; }
+#todo .tidbit-q.open::before { color: #4694B9; content: "v"; margin-left: -29px; }
 
 /* party people */
 #party { text-align: center; }
@@ -108,9 +119,6 @@ a:hover { color: #0E79AB; }
 .party-rows .party-person .party-face:hover { border-color: #f27442; }
 
 .party-story { height: 110px; font-weight: 200; font-size: 12pt; }
-@media (min-width: 768px) { .party-story { font-size: 10pt; } }
-@media (min-width: 992px) { .party-story { font-size: 11pt; } }
-@media (min-width: 1200px) { .party-story { font-size: 12pt; } }
 
 .party-person.active .party-face { border-color: #0a577b; }
 

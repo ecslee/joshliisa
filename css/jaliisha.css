@@ -23,7 +23,8 @@ a:hover { color: #0E79AB; }
 /* nav */
 #wedding-menu.dropdown { position: fixed; top: 20px; left: 20px; z-index: 100; }
 
-.dropdown-menu { background-color: rgba(255, 255, 255, 0.8); }
+.dropdown-menu { background-color: white; }
+@media (min-width: 768px) { .dropdown-menu { background-color: rgba(255, 255, 255, 0.9); } }
 .dropdown-menu > li > a { font-weight: 300; }
 .dropdown-menu > li > a:hover { color: white; background-color: #0a577b; background-color: rgba(10, 87, 123, 0.8); }
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover { background-color: #0a577b; background-color: rgba(10, 87, 123, 0.8); }
@@ -32,10 +33,10 @@ a:hover { color: #0E79AB; }
 
 .navbar-toggle { color: white; text-shadow: 1px 1px 1px #0a577b; display: block; }
 .navbar-toggle .menu-bars { display: inline-block; margin-right: 10px; }
-.navbar-toggle .menu-bars .icon-bar { height: 2px; border-radius: 1px; border: 1px solid white; box-shadow: 1px 1px 1px #0a577b; }
+.navbar-toggle .menu-bars .icon-bar { height: 2px; border-radius: 1px; border: 1px solid #0E79AB; }
+@media (min-width: 768px) { .navbar-toggle .menu-bars .icon-bar { border: 1px solid white; box-shadow: 1px 1px 1px #0a577b; } }
 .navbar-toggle:hover .icon-bar { border-color: #f27442; border-color: #0a577b; }
 @media (max-width: 767px) { .navbar-toggle { background: none; padding: 0px; margin: 0px; }
-  .navbar-toggle .icon-bar { border-color: #0a577b; box-shadow: none; }
   .navbar-toggle .menu-label { display: none; } }
 
 /* welcome section */

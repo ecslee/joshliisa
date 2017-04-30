@@ -7,10 +7,10 @@ $orange: rgb(242, 116, 66); // #f27442
 /* main */
 
 body {
-    font-family: "Andes", Helvetica, sans-serif;
+    font-family: "BoosterNextFY", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
     color: #555;
     font-size: 12pt;
-    font-weight: 300;
 }
 
 h1 {
@@ -255,11 +255,7 @@ a:hover {
         margin: 30px auto;
     }
     
-    p {
-        b {
-            font-weight: bolder;
-        }
-        
+    p { 
         &:first-of-type {
             text-align: justify;
         }

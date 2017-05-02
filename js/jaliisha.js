@@ -118,3 +118,5 @@ $('#wedding-menu a').click(function (evt) {
         }, 500, function () { });
     }
 });
+
+console.log('*~ WebSeitz 2017 ~*');

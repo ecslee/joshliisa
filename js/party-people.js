@@ -140,7 +140,7 @@ for (var party in parties) {
 
         var $person = $('<div/>', {
             'id': 'party-' + name,
-            'class': 'party-person col-xs-12',
+            'class': 'party-person col-xs-6',
         }).data('who', name);
 
         var imgPath = 'images/wedding-party/' + party + '/' + person.img + '.jpg';
@@ -160,7 +160,7 @@ for (var party in parties) {
             text: person.title
         }));
 
-        $('.party-rows #' + party).append($person);
+        $('.party-rows').append($person);
     }
 }
 

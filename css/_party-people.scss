@@ -4,19 +4,11 @@
     text-align: center;
 }
 
-//.party-rows {
-//    @media (min-width: 768px) {
-//        width: 258px;
-//    }
-//
-//    @media (min-width: 992px) {
-//        width: 350px;
-//    }
-//    
-//    @media (min-width: 1200px) {
-//        width: 438px;
-//    }
-//}
+.party-rows {
+    .party-person {
+        padding: 0px;
+    }
+}
 
 .party-name {
     font-size: 10pt;

@@ -40,8 +40,8 @@ var picMap = {
     'story': '110',
     'venue': '123',
     'todo': '184',
-    'party': '169',
     'registry': '184',
+    'party': '169',
     'tidbits': '147',
     'thanks': '183'
 };

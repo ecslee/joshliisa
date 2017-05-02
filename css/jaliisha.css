@@ -95,6 +95,7 @@ a:hover { color: #0E79AB; }
 
 #todo .tidbit-q::before { content: ">"; font-family: sans-serif; top: 0; }
 #todo .tidbit-q.open::before { color: #4694B9; content: "v"; margin-left: -29px; }
+#todo .tidbit-a .caption { text-align: center; font-style: italic; }
 
 /* party people */
 #party { text-align: center; }

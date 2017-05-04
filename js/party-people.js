@@ -140,7 +140,7 @@ for (var party in parties) {
 
         var $person = $('<div/>', {
             'id': 'party-' + name,
-            'class': 'party-person col-xs-6',
+            'class': 'party-person col-xs-3',
         }).data('who', name);
 
         var imgPath = 'images/wedding-party/' + party + '/' + person.img + '.jpg';
@@ -160,21 +160,25 @@ for (var party in parties) {
             text: person.title
         }));
 
-        $('.party-rows').append($person);
+        $('.party-rows #' + party).append($person);
     }
 }
 
 // clicking bridal party
-$('.party-rows .party-person').click(function () {
-    $('.party-rows .party-person').removeClass('active');
+function switchProfile (evt) {
+    var isBride = evt.data.isBride;
+    $('.party-rows #' + (isBride ? 'bride-tribe' : 'groom-crew') + ' .party-person').removeClass('active');
     $(this).addClass('active');
-    $('#party-selected').attr('data-who', $(this).data('who'));
+    $('#party-selected-' + (isBride ? 'bride' : 'groom')).attr('data-who', $(this).data('who'));
     
-    var person = bridesmaids[$(this).data('who')] ? bridesmaids[$(this).data('who')] : groomsmen[$(this).data('who')];
-    $('#party-selected .party-name').html(person.name);
-    $('#party-selected .party-title').html(person.label);
-    $('#party-selected .party-story').html(person.story);
-});
+    var person = isBride ? bridesmaids[$(this).data('who')] : groomsmen[$(this).data('who')];
+    $('#party-selected-' + (isBride ? 'bride' : 'groom') + ' .party-name').html(person.name);
+    $('#party-selected-' + (isBride ? 'bride' : 'groom') + ' .party-title').html(person.label);
+    $('#party-selected-' + (isBride ? 'bride' : 'groom') + ' .party-story').html(person.story);
+}
+
+$('.party-rows #bride-tribe .party-person').click({ isBride: true }, switchProfile);
+$('.party-rows #groom-crew .party-person').click({ isBride: false}, switchProfile);
 
 // "hover" main profile pic on touch device
 $('#party-selected .party-face').on('touchstart', function (evt) {
@@ -187,3 +191,6 @@ $('#party-selected .party-face').on('touchstart', function (evt) {
 
 // start with Amalia
 $('#party-amalia').click();
+
+// and Daniel
+$('#party-daniel').click();

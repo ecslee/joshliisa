@@ -100,7 +100,7 @@ a:hover { color: #0E79AB; }
 /* party people */
 #party { text-align: center; }
 
-.party-rows .party-person { padding: 0px; }
+.img-wrapper { margin-bottom: 20px; }
 
 .party-name { font-size: 10pt; font-weight: 600; margin: 10px 0px 0px; }
 .party-name .party-last-name { display: none; }
@@ -109,20 +109,23 @@ a:hover { color: #0E79AB; }
 .party-title { font-size: 9pt; font-weight: 300; }
 @media (max-width: 767px) { .party-title { font-size: 8pt; } }
 
-.party-face { padding-bottom: 60%; background-repeat: no-repeat; background-position: center; background-size: cover; }
+.party-face { background-repeat: no-repeat; background-position: center; background-size: cover; }
 
+.party-rows { width: 100%; float: left; }
+.party-rows .party-person { padding: 0px; width: 12.5%; display: inline-block; }
 .party-rows .party-person .party-name { margin-bottom: 10px; display: none; }
 .party-rows .party-person .party-title { display: none; }
-.party-rows .party-person .party-face { border: 3px solid white; border-radius: 3px; }
+.party-rows .party-person .party-face { border: 3px solid white; border-radius: 3px; width: 100%; padding-bottom: 90%; }
 .party-rows .party-person .party-face:hover { border-color: #f27442; }
 
-.party-story { font-weight: 200; font-size: 12pt; }
+.party-story { height: 150px; font-weight: 200; font-size: 12pt; margin-top: 10px; }
+@media (min-width: 1200px) { .party-story { height: 130px; } }
 
 .party-person.active .party-face { border-color: #0a577b; }
 
 #bride-tribe-wrapper, #groom-crew-wrapper { display: inline-block; }
 
-.party-selected-bride, .party-selected-groom { margin-bottom: 30px; padding: 0px; }
+.party-selected-bride, .party-selected-groom { padding: 0px; }
 .party-selected-bride .party-face, .party-selected-groom .party-face { margin: auto; width: 90%; padding-bottom: 90%; border: 4px solid #0a577b; border-radius: 50%; margin-bottom: 10px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
 .party-selected-bride .party-face:hover, .party-selected-bride .party-face.hover, .party-selected-groom .party-face:hover, .party-selected-groom .party-face.hover { border-color: #f27442; }
 .party-selected-bride .party-name, .party-selected-bride .party-title, .party-selected-groom .party-name, .party-selected-groom .party-title { text-transform: uppercase; }

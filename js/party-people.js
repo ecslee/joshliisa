@@ -135,7 +135,6 @@ var parties = {
 };
 
 for (var party in parties) {
-    var p = 0;
     for (var name in parties[party]) {
         var person = parties[party][name];
 
@@ -146,7 +145,7 @@ for (var party in parties) {
 
         var imgPath = 'images/wedding-party/' + party + '/' + person.img + '.jpg';
         var $face = $('<div/>', {
-            class: 'party-face col-xs-8'
+            class: 'party-face'
         });
         
         $person.append($face);
@@ -161,8 +160,7 @@ for (var party in parties) {
             text: person.title
         }));
 
-        $('.party-rows .' + party).eq(Math.floor(p/4)).append($person);
-        p++;
+        $('.party-rows .' + party).append($person);
     }
 }
 

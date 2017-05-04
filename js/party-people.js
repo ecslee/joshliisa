@@ -44,7 +44,7 @@ var bridesmaids = {
          label: 'Sister-in-law-to-be',
          img: 'miriam',
          img2: 'miriam2',
-         story: 'Miriam is almost Aliisa\'s sister-in-law! She can be found prodding into rat brains in a lab, making cool arts and crafts, or going on colorful adventures with her adorable daughter Ellie. Also known as "Mir-Mom" by her siblings, Miriam\'s loving instincts have welcomed me in too, and I\'m so grateful for that!'
+         story: 'Miriam is almost my sister-in-law! She can be found prodding into rat brains in a lab, making cool arts and crafts, or going on colorful adventures with her adorable daughter Ellie. Also known as "Mir-Mom" by her siblings, Miriam\'s loving instincts have welcomed me in too, and I\'m so grateful!'
      },
      naomi: {
          name: 'Naomi Bocarsly-Boyce',

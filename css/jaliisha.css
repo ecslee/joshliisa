@@ -111,11 +111,6 @@ a:hover { color: #0E79AB; }
 
 .party-face { padding-bottom: 100%; background-repeat: no-repeat; background-position: center; background-size: cover; }
 
-.party-rows { padding-right: 0px; }
-.party-rows #bride-tribe, .party-rows #groom-crew { padding: 0px; }
-.party-rows #bride-tribe { padding-right: 7px; }
-.party-rows #groom-crew { padding-left: 7px; }
-.party-rows .party-person { padding: 0px 0px 14px 0px; }
 .party-rows .party-person .party-name { margin-bottom: 10px; display: none; }
 .party-rows .party-person .party-title { display: none; }
 .party-rows .party-person .party-face { border: 3px solid white; border-radius: 3px; }

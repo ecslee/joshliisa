@@ -135,17 +135,18 @@ var parties = {
 };
 
 for (var party in parties) {
+    var p = 0;
     for (var name in parties[party]) {
         var person = parties[party][name];
 
         var $person = $('<div/>', {
             'id': 'party-' + name,
-            'class': 'party-person col-xs-3',
+            'class': 'party-person',
         }).data('who', name);
 
         var imgPath = 'images/wedding-party/' + party + '/' + person.img + '.jpg';
         var $face = $('<div/>', {
-            class: 'party-face'
+            class: 'party-face col-xs-8'
         });
         
         $person.append($face);
@@ -160,28 +161,29 @@ for (var party in parties) {
             text: person.title
         }));
 
-        $('.party-rows #' + party).append($person);
+        $('.party-rows .' + party).eq(Math.floor(p/4)).append($person);
+        p++;
     }
 }
 
 // clicking bridal party
 function switchProfile (evt) {
     var isBride = evt.data.isBride;
-    $('.party-rows #' + (isBride ? 'bride-tribe' : 'groom-crew') + ' .party-person').removeClass('active');
+    $('.party-rows .' + (isBride ? 'bride-tribe' : 'groom-crew') + ' .party-person').removeClass('active');
     $(this).addClass('active');
-    $('#party-selected-' + (isBride ? 'bride' : 'groom')).attr('data-who', $(this).data('who'));
+    $('.party-selected-' + (isBride ? 'bride' : 'groom')).attr('data-who', $(this).data('who'));
     
     var person = isBride ? bridesmaids[$(this).data('who')] : groomsmen[$(this).data('who')];
-    $('#party-selected-' + (isBride ? 'bride' : 'groom') + ' .party-name').html(person.name);
-    $('#party-selected-' + (isBride ? 'bride' : 'groom') + ' .party-title').html(person.label);
-    $('#party-selected-' + (isBride ? 'bride' : 'groom') + ' .party-story').html(person.story);
+    $('.party-selected-' + (isBride ? 'bride' : 'groom') + ' .party-name').html(person.name);
+    $('.party-selected-' + (isBride ? 'bride' : 'groom') + ' .party-title').html(person.label);
+    $('.party-selected-' + (isBride ? 'bride' : 'groom') + ' .party-story').html(person.story);
 }
 
-$('.party-rows #bride-tribe .party-person').click({ isBride: true }, switchProfile);
-$('.party-rows #groom-crew .party-person').click({ isBride: false}, switchProfile);
+$('.party-rows .bride-tribe .party-person').click({ isBride: true }, switchProfile);
+$('.party-rows .groom-crew .party-person').click({ isBride: false}, switchProfile);
 
 // "hover" main profile pic on touch device
-$('#party-selected .party-face').on('touchstart', function (evt) {
+$('.party-selected .party-face').on('touchstart', function (evt) {
     $(this).addClass('hover');
     evt.preventDefault();
 }).on('touchend', function (evt) {

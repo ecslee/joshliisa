@@ -84,7 +84,7 @@ a:hover { color: #0E79AB; }
 .tidbit-q:first-of-type { margin-top: 0px; }
 .tidbit-q::before { content: ""; font-size: 12pt; font-family: "Pillowbook"; color: #0a577b; position: relative; top: 2px; margin-left: -30px; margin-right: 12px; }
 .tidbit-q:hover { cursor: pointer; color: #0E79AB; }
-.tidbit-q:hover::before { color: #f27442; }
+.tidbit-q:hover::before { color: #f27442 !important; }
 
 .tidbit-a { text-align: justify; display: none; }
 .tidbit-a.tidbit-show { display: block; }
@@ -93,8 +93,8 @@ a:hover { color: #0E79AB; }
 #tidbits .tidbit-q::before { content: "Q"; }
 #tidbits .tidbit-q.open::before { color: #4694B9; }
 
-#todo .tidbit-q::before { content: ">"; font-family: sans-serif; top: 0; }
-#todo .tidbit-q.open::before { color: #4694B9; content: "v"; margin-left: -29px; }
+#todo .tidbit-q::before { content: "\e250"; font-family: "Glyphicons Halflings"; font-style: normal; font-weight: normal; line-height: 1; top: 3px; }
+#todo .tidbit-q.open::before { color: #4694B9; content: "\e252"; }
 #todo .tidbit-a .caption { text-align: center; font-style: italic; }
 
 /* party people */

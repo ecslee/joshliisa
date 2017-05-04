@@ -42,7 +42,7 @@
         color: $teal-light;
 
         &::before {
-            color: $orange;
+            color: $orange !important;
         }
     }
 }
@@ -77,16 +77,18 @@
 #todo {
     .tidbit-q {
         &::before {
-            content: ">";
-            font-family: sans-serif;
-            top: 0;
+            content: "\e250";
+            font-family: "Glyphicons Halflings";
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            top: 3px;
         }
         
         &.open {
             &::before {
                 color: $teal-lightest;
-                content: "v";
-                margin-left: -29px;
+                content: "\e252";
             }
         }
     }

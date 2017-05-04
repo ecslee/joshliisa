@@ -176,5 +176,14 @@ $('.party-rows .party-person').click(function () {
     $('#party-selected .party-story').html(person.story);
 });
 
+// "hover" main profile pic on touch device
+$('#party-selected .party-face').on('touchstart', function (evt) {
+    $(this).addClass('hover');
+    evt.preventDefault();
+}).on('touchend', function (evt) {
+    $(this).removeClass('hover');
+    evt.preventDefault();
+});
+
 // start with Amalia
 $('#party-amalia').click();

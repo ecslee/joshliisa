@@ -121,8 +121,8 @@ a:hover { color: #0E79AB; }
 .party-person.active .party-face { border-color: #0a577b; }
 
 #party-selected { margin-bottom: 30px; padding: 0px; }
-#party-selected .party-face { margin: auto; border: 4px solid #0a577b; border-radius: 50%; margin-bottom: 10px; }
-#party-selected .party-face:hover { border-color: #f27442; }
+#party-selected .party-face { margin: auto; border: 4px solid #0a577b; border-radius: 50%; margin-bottom: 10px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+#party-selected .party-face:hover, #party-selected .party-face.hover { border-color: #f27442; }
 #party-selected .party-name, #party-selected .party-title { text-transform: uppercase; }
 
 /* Bridesmaids */
@@ -130,7 +130,7 @@ a:hover { color: #0E79AB; }
 #party-aliisa .party-face { background-image: url("../images/wedding-party/bride-tribe/aliisa.jpg"); }
 
 #party-selected[data-who="aliisa"] .party-face { background-image: url("../images/wedding-party/bride-tribe/aliisa.jpg"); }
-#party-selected[data-who="aliisa"] .party-face:hover { background-image: url("../images/wedding-party/bride-tribe/aliisa2.jpg"); }
+#party-selected[data-who="aliisa"] .party-face:hover, #party-selected[data-who="aliisa"] .party-face.hover { background-image: url("../images/wedding-party/bride-tribe/aliisa2.jpg"); }
 
 /* Amalia */
 #party-amalia .party-face { background-image: url("../images/wedding-party/bride-tribe/amalia.jpg"); }
@@ -147,13 +147,13 @@ a:hover { color: #0E79AB; }
 #party-avelina .party-face { background-image: url("../images/wedding-party/bride-tribe/avi.jpg"); }
 
 #party-selected[data-who="avelina"] .party-face { background-image: url("../images/wedding-party/bride-tribe/avi.jpg"); }
-#party-selected[data-who="avelina"] .party-face:hover { background-image: url("../images/wedding-party/bride-tribe/avi-yupi.jpg"); }
+#party-selected[data-who="avelina"] .party-face:hover, #party-selected[data-who="avelina"] .party-face.hover { background-image: url("../images/wedding-party/bride-tribe/avi-yupi.jpg"); }
 
 /* Emily */
 #party-emily .party-face { background-image: url("../images/wedding-party/bride-tribe/emily.jpg"); }
 
 #party-selected[data-who="emily"] .party-face { background-image: url("../images/wedding-party/bride-tribe/emily.jpg"); }
-#party-selected[data-who="emily"] .party-face:hover { background-image: url("../images/wedding-party/bride-tribe/emily2.jpg"); }
+#party-selected[data-who="emily"] .party-face:hover, #party-selected[data-who="emily"] .party-face.hover { background-image: url("../images/wedding-party/bride-tribe/emily2.jpg"); }
 
 /* Alissa */
 #party-alissa .party-face { background-image: url("../images/wedding-party/bride-tribe/alissa.jpg"); }
@@ -164,26 +164,26 @@ a:hover { color: #0E79AB; }
 
 /* Miriam */
 #party-selected[data-who="miriam"] .party-face { background-image: url("../images/wedding-party/bride-tribe/miriam.jpg"); }
-#party-selected[data-who="miriam"] .party-face:hover { background-image: url("../images/wedding-party/bride-tribe/miriam2.jpg"); }
+#party-selected[data-who="miriam"] .party-face:hover, #party-selected[data-who="miriam"] .party-face.hover { background-image: url("../images/wedding-party/bride-tribe/miriam2.jpg"); }
 
 /* Naomi */
 #party-naomi .party-face { background-image: url("../images/wedding-party/bride-tribe/naomi2.jpg"); }
 
 #party-selected[data-who="naomi"] .party-face { background-image: url("../images/wedding-party/bride-tribe/naomi2.jpg"); }
-#party-selected[data-who="naomi"] .party-face:hover { background-image: url("../images/wedding-party/bride-tribe/naomi.jpg"); }
+#party-selected[data-who="naomi"] .party-face:hover, #party-selected[data-who="naomi"] .party-face.hover { background-image: url("../images/wedding-party/bride-tribe/naomi.jpg"); }
 
 /* Ellie */
 #party-ellie .party-face { background-image: url("../images/wedding-party/bride-tribe/ellie.jpg"); }
 
 #party-selected[data-who="ellie"] .party-face { background-image: url("../images/wedding-party/bride-tribe/ellie.jpg"); }
-#party-selected[data-who="ellie"] .party-face:hover { background-image: url("../images/wedding-party/bride-tribe/ellie2.jpg"); }
+#party-selected[data-who="ellie"] .party-face:hover, #party-selected[data-who="ellie"] .party-face.hover { background-image: url("../images/wedding-party/bride-tribe/ellie2.jpg"); }
 
 /* Groomsmen */
 /* Josh */
 #party-josh .party-face { background-image: url("../images/wedding-party/groom-crew/josh.jpg"); }
 
 #party-selected[data-who="josh"] .party-face { background-image: url("../images/wedding-party/groom-crew/josh.jpg"); }
-#party-selected[data-who="josh"] .party-face:hover { background-image: url("../images/wedding-party/groom-crew/josh2.jpg"); }
+#party-selected[data-who="josh"] .party-face:hover, #party-selected[data-who="josh"] .party-face.hover { background-image: url("../images/wedding-party/groom-crew/josh2.jpg"); }
 
 /* Daniel */
 #party-daniel .party-face { background-image: url("../images/wedding-party/groom-crew/daniel.jpg"); }
@@ -194,13 +194,13 @@ a:hover { color: #0E79AB; }
 
 /* Andrew */
 #party-selected[data-who="andrew"] .party-face { background-image: url("../images/wedding-party/groom-crew/andrew.jpg"); }
-#party-selected[data-who="andrew"] .party-face:hover { background-image: url("../images/wedding-party/groom-crew/andrew3.jpg"); }
+#party-selected[data-who="andrew"] .party-face:hover, #party-selected[data-who="andrew"] .party-face.hover { background-image: url("../images/wedding-party/groom-crew/andrew3.jpg"); }
 
 /* Billy */
 #party-billy .party-face { background-image: url("../images/wedding-party/groom-crew/billy2.jpg"); }
 
 #party-selected[data-who="billy"] .party-face { background-image: url("../images/wedding-party/groom-crew/billy2.jpg"); }
-#party-selected[data-who="billy"] .party-face:hover { background-image: url("../images/wedding-party/groom-crew/billy.jpg"); }
+#party-selected[data-who="billy"] .party-face:hover, #party-selected[data-who="billy"] .party-face.hover, #party-selected[data-who="billy"] .party-face.hover { background-image: url("../images/wedding-party/groom-crew/billy.jpg"); }
 
 /* Robby */
 #party-robby .party-face { background-image: url("../images/wedding-party/groom-crew/robby.jpg"); }
@@ -211,7 +211,7 @@ a:hover { color: #0E79AB; }
 #party-ham .party-face { background-image: url("../images/wedding-party/groom-crew/ham.jpg"); }
 
 #party-selected[data-who="ham"] .party-face { background-image: url("../images/wedding-party/groom-crew/ham.jpg"); }
-#party-selected[data-who="ham"] .party-face:hover { background-image: url("../images/wedding-party/groom-crew/ham2.jpg"); }
+#party-selected[data-who="ham"] .party-face:hover, #party-selected[data-who="ham"] .party-face.hover { background-image: url("../images/wedding-party/groom-crew/ham2.jpg"); }
 
 /* Aleksi */
 #party-aleksi .party-face { background-image: url("../images/wedding-party/groom-crew/aleksi.jpg"); }
@@ -222,13 +222,13 @@ a:hover { color: #0E79AB; }
 #party-anders .party-face { background-image: url("../images/wedding-party/groom-crew/anders.jpg"); }
 
 #party-selected[data-who="anders"] .party-face { background-image: url("../images/wedding-party/groom-crew/anders.jpg"); }
-#party-selected[data-who="anders"] .party-face:hover { background-image: url("../images/wedding-party/groom-crew/anders2.jpg"); }
+#party-selected[data-who="anders"] .party-face:hover, #party-selected[data-who="anders"] .party-face.hover { background-image: url("../images/wedding-party/groom-crew/anders2.jpg"); }
 
 /* James */
 #party-james .party-face { background-image: url("../images/wedding-party/groom-crew/james.jpg"); }
 
 #party-selected[data-who="james"] .party-face { background-image: url("../images/wedding-party/groom-crew/james.jpg"); }
-#party-selected[data-who="james"] .party-face:hover { background-image: url("../images/wedding-party/groom-crew/james2.jpg"); }
+#party-selected[data-who="james"] .party-face:hover, #party-selected[data-who="james"] .party-face.hover { background-image: url("../images/wedding-party/groom-crew/james2.jpg"); }
 
 /* fonts */
 /* Pillowbook */

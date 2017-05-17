@@ -9,9 +9,9 @@ h3 { font-family: "Pillowbook"; color: #0E79AB; margin-top: 20px; margin-bottom:
 
 .orange { color: #f27442; }
 
-a { color: #f27442; }
+a:not(.btn) { color: #f27442; }
 
-a:hover { color: #0E79AB; }
+a:not(.btn):hover { color: #0E79AB; }
 
 .info-section { padding-top: 50px; }
 .info-section::after { display: block; content: ""; background: url("../images/DigitalGoldFoilGraphics/GoldFineMessyLine.png") no-repeat center; background-size: contain; min-height: 5px; margin: 50px auto 0px auto; }
@@ -52,6 +52,9 @@ a:hover { color: #0E79AB; }
 #countdown #top-names #top-names-and { color: #f27442; }
 #countdown #countdown-info-wrapper { margin: 20px auto; font-size: 14pt; }
 #countdown #countdown-info-wrapper #countdown-hrs-label, #countdown #countdown-info-wrapper #countdown-min-label, #countdown #countdown-info-wrapper #countdown-sec-label { display: none; }
+#countdown .btn-success { margin-top: 10px; background-color: #0E79AB; border-color: #0a577b; }
+#countdown .btn-success:hover, #countdown .btn-success:focus { background-color: #0a577b; }
+#countdown #swath { float: left; }
 
 /* story */
 #story .img-wrapper { margin: 15px auto; }
